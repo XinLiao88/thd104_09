@@ -1,0 +1,300 @@
+@import url("reset.css");
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #4B4B4B;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .2rem;
+    /* height: 100%; */
+}
+
+.top {
+    min-width: 100%;
+    height: 160px;
+    /* margin: 0  auto; */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.top a {
+    text-decoration: none;
+    color: #4B4B4B;
+    display: block;
+}
+
+.top a:hover {
+    color: #78AA8C
+}
+
+/* a:visited,
+a:link,a:active */
+
+.top ul {
+    display: flex;
+}
+
+.select1 li {
+    margin-top: 70px;
+    margin-right: 40px;
+}
+
+.select2 li {
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.top .search {
+    float: right;
+    margin-left: 572px;
+    line-height: 1;
+    position: fixed;
+}
+
+.search li {
+    padding-left: 16px;
+    box-sizing: border-box;
+    margin-top: 14px;
+}
+
+.top input {
+    border: 1px solid #4B4B4B;
+    border-radius: 20px;
+    width: 200px;
+    height: 32px;
+    margin-right: 17px;
+    font-size: 18px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    background-image: url(../img/icon/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+    background-size: 22px;
+    font-weight: 300;
+    color: #AAAAAA;
+}
+
+.vip {
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0) #AAAAAA rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    padding-right: 15px;
+}
+
+.logo {
+    display: block;
+    margin: 0 20px;
+}
+
+
+/* ------content------ */
+
+.table{
+    width: 600px;
+    height: 620px;
+    border-radius: 50px;
+    border: 3px solid #4B4B4B ;
+    margin: 270px auto;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 400px;
+    height: 600px;
+    margin: 60px auto;
+    display:block;
+}
+
+.table h1{
+    color: #78AA8C;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 60px;
+    font-size: 24px;
+    letter-spacing: .3rem;
+}
+
+.table input {
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+    margin: 30px 0 20px 0;
+    padding-left: 60px;
+    box-sizing: border-box;
+    display: block;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #AAAAAA;
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
+    background-size: 22px;
+}
+
+.input input:nth-child(1){
+    background-image: url(../img/icon/vip.png);
+}
+
+.table input:nth-child(2) {
+    background-image: url(../img/icon/lock.png);
+}
+
+/* .table img:first-child{ 
+    margin: 0 auto;
+    display: block;
+ } */
+
+.table ul {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.table li input{
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+} /* 核取方塊 */
+
+
+.table li:first-child {
+    padding-left: 4px;
+ }/* 核取方塊往右推 */
+
+.table p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 8px;
+}
+
+.content > a{
+    background-color:#78AA8C;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: .5rem;
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 56px;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 16px;
+} /* 登入按鈕 */
+
+.content > a:hover {
+    background-color: #DC7878;
+}
+
+.table ul:last-child {
+    display: flex;
+    justify-content: center;
+}/* 免費註冊 忘記密碼連結 */
+
+.table ul a{
+    color: #4B4B4B;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+}
+
+.table ul a:hover {
+    color: #DC7878;
+}
+
+
+/* .table button{
+    background-color: #78AA8C;
+    color:#fff;
+    width: 280px;
+    height: 56px;
+    border-radius: 20px;
+    border: 0;
+    margin: 20px auto 0 auto;
+    display: block;
+    font-size: 20px;
+    letter-spacing: .2rem;
+}
+
+.table button:hover{
+    background-color:#DC7878
+} */
+
+
+
+
+
+
+
+/* -------footer------ */
+
+footer {
+    background-color: #78AA8C;
+    height: 240px;
+    width: 100%;
+    /* margin: 50px auto 0; */
+    padding: 10px 50px 0;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer {
+    max-width: 1200px;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    padding: 10px 10px 10px 10px;
+    flex-grow: 1;
+}
+
+footer h4 {
+    font-size: 16px;
+    line-height: 2.2;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.2;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.2;
+}
+
+/* footer img{
+    padding-top: 0px;
+} */
+
+footer img:first-child {
+    padding-top: 20px;
+}
+
+.footer>p:nth-child(2) {
+    letter-spacing: .1rem;
+}
+
+footer li:last-child>h4 {
+    text-align: left;
+    padding-left: 28px;
+}
