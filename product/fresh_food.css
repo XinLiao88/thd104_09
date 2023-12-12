@@ -12,6 +12,7 @@
 .title:nth-child(4) {
     margin: 120px auto 60px;
 }
+
 .title img {
     width: 36px;
     height: 36px;
@@ -29,38 +30,39 @@ h1 {
 }
 
 /* ------menu------ */
-.menu{
+.menu {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    width: 620px;
+    width: 700px;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0px;
-    width: 180px;
+    width: 200px;
 }
 
-/* .menu li{
-    padding: 0 5px;
-} */
+.menu li{
+    width: 200px;
+    padding: 0 20px;
+}
 
 
-.line{
+.line {
     border-left: 1.5px solid #AAAAAA;
     border-right: 1.5px solid #AAAAAA;
 }
 
-.line2{
+.line2 {
     display: flex;
     justify-content: center;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: #4B4B4B;
     display: flex;
@@ -71,7 +73,7 @@ h1 {
     opacity: .7;
 }
 
-.menu img{
+.menu img {
     padding-top: 6px;
     padding-right: 8px;
 }
@@ -90,11 +92,11 @@ h1 {
 
 .content ul {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     /* flex-grow: 1; */
 }
 
-.content > ul{
+.content>ul {
     margin: 40px auto;
 }
 
@@ -104,22 +106,23 @@ h1 {
 } */
 
 .content li {
-justify-self:left;
+    justify-self: left;
 }
 
-.quantity{
+.quantity {
     font-size: 18px;
     font-weight: 300;
     color: #AAAAAA;
 }
 
-.product_table{
+.product_table {
     padding-left: 14px;
 }
 
-.price_table{
+.price_table {
     padding-bottom: 8px;
 }
+
 .price {
     font-size: 22px;
     font-weight: 400;
@@ -127,7 +130,7 @@ justify-self:left;
     padding-left: 14px;
 }
 
-.original_price{
+.original_price {
     font-size: 20px;
     font-weight: 300;
     color: #AAAAAA;
@@ -135,7 +138,7 @@ justify-self:left;
 }
 
 
-.like{
+.like {
     display: block;
     width: 26px;
     padding: 4px 0 0 44px;
@@ -147,7 +150,7 @@ justify-self:left;
     content: url(../img/icon/like2.png);
 } */
 
-.button{
+.button {
     padding-left: 14px;
 }
 
@@ -155,17 +158,18 @@ justify-self:left;
     display: flex;
 } */
 
-.button li{
+.button li {
     display: flex;
     align-items: center;
 }
 
-.button p{
+.button p {
     padding: 0 10px;
-    align-items: center ;
+    align-items: center;
     font-size: 18px;
 }
-.button button{
+
+.button button {
     /* margin: 4px 10px 0 0; */
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -184,11 +188,11 @@ justify-self:left;
     font-weight: 700;
 }
 
-.button .add_cart{
+.button .add_cart {
     background-color: #78AA8C;
     width: 118px;
     height: 30px;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 15px;
     margin-left: 20px;
     border-radius: 8px;
@@ -202,8 +206,7 @@ justify-self:left;
     /* font-size: 15px; */
 }
 
-.fa-solid{
+.fa-solid {
     padding-right: 2px;
 
 }
-
