@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="setpw.css" rel="stylesheet" type="text/css" />
+    <link href="./setpw.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/logo_ico.ico" type="image/x-icon" />
-    <title>圓食｜重設密碼</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <title>圓食｜重設密碼</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <ul>
             <li class="logo">
                 <a href="../index.html">
-                    <img src="../img/LOGO.svg" alt=""></a>
+                    <img src="../img/LOGO1216.svg" alt=""></a>
             </li>
         </ul>
         <ul class="select2">
@@ -54,19 +54,29 @@
         <div class="content">
 
             <h1>設定新密碼</h1>
-            <div class="input">
-                <input type="text" placeholder="請設定新密碼(6~16位英數混合)">
-                <input type="text" placeholder="再次輸入密碼">
+            <div class="input1">
+                <!-- 改成可以按的眼睛 -->
+                <img src="../img/icon/lock.png" alt="">
+                <input type="password" placeholder="請設定密碼(6~16位英數混合)" id="myInput1">
+                <i class="fa-regular fa-eye-slash" id="eyes1"></i>
+             </div>
+            <div class="input2">
+                <img src="../img/icon/lock.png" alt="">
+                
+                <input type="password" placeholder="請設定密碼(6~16位英數混合)" id="myInput2">
+                <i class="fa-regular fa-eye-slash" id="eyes2"></i>
             </div>
+                <!-- <input type="password" placeholder="請設定新密碼(6~16位英數混合)">
+                <input type="password" placeholder="再次輸入密碼"> -->
+        
 
-            <!-- <a href=""><img src="../img/button/Property 1=login, Property 2=on.png" alt=""></a> -->
-
-            <a href="vip_login.html">重設密碼</a>
-
-            <!-- <button>登入</button> -->
-
+            <form action="vip_login.html">
+                <input type="submit" value="重設密碼" />
+            </form>
+    
         </div>
     </div>
+    
 
 
 
@@ -96,9 +106,9 @@
                 <li>
                     <h4>追蹤我們</h4>
                     <ul>
-                        <li><a href="#"><img src="../img/icon/line.png" alt=""></a></li>
-                        <li><a href="#"><img src="../img/icon/facebook.png" alt=""></a></li>
-                        <li><a href="#"><img src="../img/icon/IG.png" alt=""></a></li>
+                        <li><a href="#"><img src="../img/icon/line.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../img/icon/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../img/icon/IG.svg" alt=""></a></li>
                     </ul>
                 </li>
             </ul>
@@ -106,6 +116,34 @@
             <p>Copyright© 2023 YUAN FOOD Inc.</p>
         </div>
     </footer>
+
+    <script>
+        window.onload = function () {
+
+            var x = document.getElementById("myInput1");
+            document.getElementById('eyes1').onclick = function () {
+                if (x.type == "password") {
+                    x.type = "text";
+                    this.classList.add('fa-eye');
+                } else {
+                    x.type = "password";
+                    this.classList.remove('fa-eye');
+                }
+            }
+
+            var y = document.getElementById("myInput2");
+            document.getElementById('eyes2').onclick = function () {
+                if (y.type == "password") {
+                    y.type = "text";
+                    this.classList.add('fa-eye');
+                } else {
+                    y.type = "password";
+                    this.classList.remove('fa-eye');
+                }
+            }
+        }
+
+    </script>
 
 </body>
 

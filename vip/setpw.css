@@ -10,7 +10,7 @@
     height: 570px;
     border-radius: 50px;
     border: 3px solid #4B4B4B;
-    margin: 270px auto;
+    margin: 200px auto;
     box-sizing: border-box;
 }
 
@@ -26,12 +26,12 @@
     text-align: center;
     font-weight: 700;
     margin-bottom: 60px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: .3rem;
 }
 
-.table input {
-    border: 1px solid #4B4B4B;
+.input input {
+    /* border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 400px;
     height: 60px;
@@ -42,31 +42,88 @@
 
     font-size: 18px;
     font-weight: 300;
-    color: #AAAAAA;
+    color: #4B4B4B;
     background-repeat: no-repeat;
     background-size: 22px;
     background-image: url(../img/icon/lock.png),
                       url(../img/icon/eye_off.png);
     background-position: 20px 15px,
-                        354px 15px;
+                        354px 15px; */
 }
 
+.content .input1, .content .input2 {
+    display: flex;
+    border: 1px solid #AAAAAA;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+    margin: 30px 0 20px 0;
+    /* padding: 0px 0px 0px 20px; */
+    box-sizing: border-box;
 
-.content > a{
+    font-size: 18px;
+    font-weight: 300;
+    color: #4B4B4B;
+}
+
+input {
+    outline: 0;
+}
+
+.input1 input, .input2 input{
+    border: none;
+    width: 300px;
+    height: 58px;
+    padding-left: 14px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #4B4B4B;
+    line-height: 60px;
+}
+
+.content .input1 img, .content .input2 img {
+    height: 24px;
+    padding: 15px 4px 0 22px;
+}
+
+.input1 i, .input2 i {
+    width: 57px;
+    height: 60px;
+    /* border: 1px solid #AAAAAA; */
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    /* box-sizing: border-box; */
+}
+
+.input1 .fa-eye-slash, .input2 .fa-eye-slash {
+    border-left: 0;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    color: #AAAAAA;
+}
+
+.input1 .fa-eye-slash:hover, .input2 .fa-eye-slash:hover {
+    color: #333;
+}
+
+ /* 按鈕 */
+.content input[type="submit"] {
     background-color: #78AA8C;
-    text-decoration: none;
     color: #ffffff;
+    font-size: 18px;
     letter-spacing: .5rem;
     display: block;
     margin: 50px auto;
     width: 280px;
     height: 56px;
-    text-align: center;
-    line-height: 52px;
     border-radius: 16px;
-} /* 按鈕 */
+    border: none;
+}
 
-.content > a:hover {
+.content input[type="submit"]:hover {
     background-color: #DC7878;
 }
 

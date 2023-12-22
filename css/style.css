@@ -4,7 +4,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     color: #4B4B4B;
     background-color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: .2rem;
@@ -13,14 +13,14 @@ body {
 
 .top {
     min-width: 100%;
-    height: 160px;
+    height: 120px;
     /* margin: 0  auto; */
-    padding: 20px 0;
+    padding: 10px 0;
+    box-sizing: border-box;
     position: fixed;
     top: 0;
     background-color: #ffffff;
-    /* overflow: hidden; */
-    box-sizing: border-box;
+ 
     display: flex;
     justify-content: center;
 }
@@ -46,18 +46,18 @@ a:link,a:active */
 }
 
 .select1 li {
-    margin-top: 70px;
+    margin-top: 60px;
     margin-right: 40px;
 }
 
 .select2 li {
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 40px;
 }
 
 .top .search {
     float: right;
-    margin-left: 572px;
+    margin-left: 550px;
     line-height: 1;
     position: fixed;
 
@@ -69,21 +69,26 @@ a:link,a:active */
     margin-top: 14px;
 }
 
-input {
-    border: 1px solid grey;
+.search input {
+    border: 1px solid #AAAAAA;
     border-radius: 20px;
-    width: 200px;
-    height: 32px;
-    margin-right: 17px;
-    font-size: 18px;
-    padding-left: 40px;
+    width: 140px;
+    height: 26px;
+    margin-right: 8px;
+    font-size: 12px;
+    padding-left: 36px;
     box-sizing: border-box;
     background-image: url(../img/icon/search.svg);
     background-repeat: no-repeat;
-    background-position: 10px 4px;
-    background-size: 22px;
+    background-position: 10px 3.5px;
+    background-size: 17px;
     font-weight: 300;
-    color: #AAAAAA;
+    color: #4B4B4B;
+}
+
+.search img{
+    width: 20px;
+    /* padding-top: 3px; */
 }
 
 .vip {
@@ -98,7 +103,7 @@ input {
 }
 
 .logo img{
-    height: 120px;
+    height: 100px;
 }
 
 
@@ -106,8 +111,8 @@ input {
 
 footer {
     background-color: #78AA8C;
-    height: 240px;
-    width: 100%;
+    height: 200px;
+    /* width: 100%; */
     padding: 10px 50px 0;
     color: #ffffff;
     text-align: center;
@@ -115,9 +120,9 @@ footer {
 }
 
 .footer {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 footer ul {
@@ -127,15 +132,16 @@ footer ul {
 footer li {
     padding: 0px 10px 10px 10px;
     flex-grow: 1;
+    width: 200px;
 }
 
 footer h4 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2.2;
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 2.2;
 }
@@ -144,13 +150,13 @@ footer p {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     line-height: 2.2;
 }
 
 .footer a:hover {
-    opacity: .5;
+    opacity: .7;
 }
 
 footer img {
@@ -158,12 +164,12 @@ footer img {
 }
 
 /* 緯育版權說明 */
-.footer>p:nth-child(2) {
+.footer > p:nth-child(2) {
     letter-spacing: .1rem;
 }
 
 /* 追蹤我們 */
-footer li:last-child>h4 {
+footer li:last-child > h4 {
     text-align: left;
-    padding-left: 28px;
+    padding-left: 18px;
 }

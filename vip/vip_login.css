@@ -11,7 +11,7 @@
     height: 620px;
     border-radius: 50px;
     border: 3px solid #4B4B4B ;
-    margin: 270px auto;
+    margin: 200px auto;
     box-sizing: border-box;
 }
 
@@ -27,12 +27,12 @@
     text-align: center;
     font-weight: 700;
     margin-bottom: 60px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: .3rem;
 }
 
-.table input {
-    border: 1px solid grey;
+.input input {
+    border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 400px;
     height: 60px;
@@ -43,70 +43,118 @@
 
     font-size: 18px;
     font-weight: 300;
-    color: #AAAAAA;
+    color: #4B4B4B;
     background-repeat: no-repeat;
     background-position: 20px 15px;
     background-size: 22px;
-}
-
-.input input:nth-child(1){
     background-image: url(../img/icon/vip.svg);
 }
 
-.table input:nth-child(2) {
-    background-image: url(../img/icon/lock.png);
+input {
+    outline: 0;
 }
 
-/* .table img:first-child{ 
-    margin: 0 auto;
-    display: block;
- } */
+.content .input2 {
+    display:flex;
+    border: 1px solid #AAAAAA;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+    margin: 30px 0 20px 0;
+    /* padding: 0px 0px 0px 20px; */
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #4B4B4B;
+}
+
+.content .input2 img {
+    height: 24px;
+    padding: 15px 4px 0 22px;
+}
+
+.input2 input {
+    border: none;
+    width: 300px;
+    height: 58px;
+    padding-left: 14px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #4B4B4B;
+    line-height: 60px;
+}
+
+.input2 i {
+    width: 57px;
+    height: 60px;
+    /* border: 1px solid #AAAAAA; */
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    /* box-sizing: border-box; */
+}
+
+.input2 .fa-eye-slash {
+    border-left: 0;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    color: #AAAAAA;
+}
+
+.input2 .fa-eye-slash:hover {
+    color: #333;
+}
 
 .table ul {
     display: flex;
     padding-bottom: 40px;
 }
 
+/* 核取方塊 */
 .table li input{
     width: 28px;
     height: 28px;
     display: block;
     margin: 0 auto;
-} /* 核取方塊 */
+} 
 
-
+/* 核取方塊往右推 */
 .table li:first-child {
     padding-left: 4px;
- }/* 核取方塊往右推 */
+ }
 
-.table p {
+.table label {
     font-size: 18px;
     font-weight: 300;
     padding-left: 8px;
 }
 
-.content > a{
+/* 登入按鈕 */
+.content input[type="submit"]{
     background-color:#78AA8C;
-    text-decoration: none;
     color: #ffffff;
+    font-size: 18px;
     letter-spacing: .5rem;
     display: block;
     margin: 0 auto;
     width: 280px;
     height: 56px;
-    text-align: center;
-    line-height: 52px;
     border-radius: 16px;
-} /* 登入按鈕 */
+    border: none;
+} 
 
-.content > a:hover {
+.content input[type="submit"]:hover {
     background-color: #DC7878;
 }
 
+/* 免費註冊 忘記密碼連結 */
 .table ul:last-child {
     display: flex;
     justify-content: center;
-}/* 免費註冊 忘記密碼連結 */
+}
 
 .table ul a{
     color: #4B4B4B;
@@ -120,23 +168,6 @@
     color: #DC7878;
 }
 
-
-/* .table button{
-    background-color: #78AA8C;
-    color:#fff;
-    width: 280px;
-    height: 56px;
-    border-radius: 20px;
-    border: 0;
-    margin: 20px auto 0 auto;
-    display: block;
-    font-size: 20px;
-    letter-spacing: .2rem;
-}
-
-.table button:hover{
-    background-color:#DC7878
-} */
 
 
 

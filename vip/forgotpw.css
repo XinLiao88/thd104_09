@@ -10,7 +10,7 @@
     height: 520px;
     border-radius: 50px;
     border: 3px solid #4B4B4B;
-    margin: 270px auto;
+    margin: 200px auto;
     box-sizing: border-box;
 }
 
@@ -26,12 +26,12 @@
     text-align: center;
     font-weight: 700;
     margin-bottom: 60px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: .3rem;
 }
 
-.table input {
-    border: 1px solid #4B4B4B;
+.input input {
+    border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 400px;
     height: 60px;
@@ -42,7 +42,7 @@
 
     font-size: 18px;
     font-weight: 300;
-    color: #AAAAAA;
+    color: #4B4B4B;
     background-repeat: no-repeat;
     background-position: 20px 16px;
     background-size: 26px;
@@ -57,22 +57,21 @@
     letter-spacing: .1rem;
 }
 
-
-.content > a{
-    background-color: #78AA8C;
-    text-decoration: none;
+/* 按鈕 */
+.content input[type="submit"]{
+    background-color:#78AA8C;
     color: #ffffff;
+    font-size: 18px;
     letter-spacing: .5rem;
     display: block;
     margin: 50px auto;
     width: 280px;
     height: 56px;
-    text-align: center;
-    line-height: 52px;
     border-radius: 16px;
-} /* 按鈕 */
+    border: none;
+} 
 
-.content > a:hover {
+.content input[type="submit"]:hover {
     background-color: #DC7878;
 }
 

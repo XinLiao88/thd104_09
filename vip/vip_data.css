@@ -12,11 +12,17 @@
 
 /* ------左側選單------ */
 
+.main{
+    max-width: 1198px;
+    display: flex;
+    margin-top: 200px;
+    margin-left: 16%;
+}
 .vip_menu{
     /* position: absolute; */
-    top: 270px;
-    left: 20%;
-    position: fixed;
+    /* top: 240px; */
+    /* left: 20%; */
+    /* position: fixed; */
     /* margin: 0px 15%; */
 }
 
@@ -25,7 +31,7 @@
     text-align: center;
     font-weight: 700;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: .3rem;
 }
 
@@ -36,6 +42,9 @@
     color: #4B4B4B;
 }
 
+.vip_menu a:hover{
+    opacity: .7;
+}
 /* 該頁左側字綠色 */
 .vip_menu a:last-child{
     color: #78AA8C;
@@ -44,6 +53,7 @@
 .vip_menu img{
     padding-left: 10px;
     padding-bottom: 10px;
+    width: 60px;
 }
 
 /* ------content------ */
@@ -53,7 +63,7 @@
     height: 900px;
     border-radius: 50px;
     border: 3px solid #4B4B4B;
-    margin: 270px auto 200px 36%;
+    margin: 0px auto 200px 16%;
     box-sizing: border-box;
 }
 
@@ -69,7 +79,7 @@
     text-align: center;
     font-weight: 700;
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: .3rem;
 }
 
@@ -88,8 +98,8 @@
     /* Email */
 }
 
-.content input {
-    border: 1px solid grey;
+.content .input1 input, .input2 input {
+    border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 400px;
     height: 60px;
@@ -100,7 +110,7 @@
 
     font-size: 18px;
     font-weight: 300;
-    color: #AAAAAA;
+    color: #4B4B4B;
     background-image: url(../img/icon/edit.png);
 
     background-repeat: no-repeat;
@@ -108,18 +118,28 @@
     background-size: 24px;
     display: inline-table;
 }
-    
+
+/* 除了姓名不能編輯 */
 .input1 input:nth-child(2){
     background-image: none;
-} /* 除了姓名不能編輯 */
-
+} 
 
 
 .gender {
     display: flex;
     align-items: center;
-    
     /* height: 60px; */
+}
+
+/* .gender ul {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 100px;
+} */
+
+.gender span {
+    padding-right: 20px;
 }
 
 .gender input {
@@ -129,58 +149,69 @@
     /* display: block; */
 }
 
-.gender ul {
+.gender li {
     display: flex;
     align-items: center;
     height: 60px;
-    padding-left: 100px;
-}
-.gender span{
-    padding-right: 20px;
 }
 
-.table_birthday{
+.gender label {
+    /* display: block; */
+    font-size: 18px;
+    padding: 0px 20px 0 10px;
     align-items: center;
 }
 
-.table_birthday span{
+
+
+
+.birthday{
+    align-items: center;
+}
+
+.birthday span{
     padding-right: 18px;
 }
 
-.table_birthday input{
-    border: 1px solid grey;
+.birthday select{
+    border: 1px solid #AAAAAA;
     border-radius: 20px;
-    width: 120px;
+    width: 121px;
     height: 60px;
     margin: 10px 18px 0px 0;
     padding-left: 20px;
-    box-sizing: border-box;
-    display: block;
+    /* box-sizing: border-box; */
+    /* display: block; */
 
     font-size: 18px;
     font-weight: 300;
-    color: #AAAAAA;
+    color: #4B4B4B;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     background-image: url(../img/icon/V.png);
     background-repeat: no-repeat;
     background-position: 85px 20px;
     background-size: 18px;
 }
 
-.content > a {
+/* 儲存按鈕 */
+.content input[type="submit"]{
     background-color: #78AA8C;
     text-decoration: none;
     color: #ffffff;
+    font-size: 18px;
     letter-spacing: .5rem;
     display: block;
     margin: 40px auto 20px;
     width: 280px;
     height: 56px;
-    text-align: center;
     line-height: 52px;
     border-radius: 16px;
-} /* 儲存按鈕 */
+    border: none;
+} 
 
-.content > a:hover {
+.content input[type="submit"]:hover {
     background-color: #DC7878;
 }
 
