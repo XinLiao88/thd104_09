@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" href="./img/logo_ico.ico" type="image/x-icon" />
     <title>圓食生鮮</title>
 </head>
@@ -52,8 +53,25 @@
             <h2>圓食；原型食物<br>
             崇尚健康、天然的飲食方式。</h2>
         </div>
+    
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/index/banner.png" alt=""></div>
+                <!--<div class="swiper-slide"><img src="./img/index/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/index/banner3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/index/banner6.jpg" alt=""></div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
-
 <!-- ------content------ -->
     <div class="title">
         <img src="./img/icon/cabbage.svg" alt="">
@@ -94,7 +112,7 @@
             <li>
                 <img src="./img/index/delivery1.svg" alt="">
                 <h3>安心配送</h3>
-                <p>當天從店鋪以冷藏或冷凍妥善包裝，新鮮低溫寄送，保持蔬果最新鮮的狀態，宅配到您手上。</p>
+                <p>我們提供快速、安全的送貨服務，讓您足不出戶，就能品嚐到最新鮮的食材。</p>
             </li>
             <li>
                 <img src="./img/index/heart-line.svg" alt="">
@@ -112,24 +130,24 @@
 <div class="content">
     <ul>
         <li>
-            <img src="./img/index/meat.png" alt="">
-            <a href="#">精選食材</a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quasi.</p>
+            <img src="./img/index/discount1.png" alt="">
+            <a href="#">首次訂購折價100</a>
+            <p>只要您是首次在我們這裡訂購，您將享受高達100元的超值折扣！</p>
         </li>
         <li>
-            <img src="./img/index/ginger.png" alt="">
-            <a href="#">安心配送</a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quasi.</p>
+            <img src="./img/index/discount2.png" alt="">
+            <a href="#">週年慶滿3000打8折</a>
+            <p>在活動期間購物滿三千元，即可享受驚喜八折優惠！</p>
         </li>
         <li>
-            <img src="./img/index/cauliflower.png" alt="">
-            <a href="#">貼心服務</a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quasi.</p>
+            <img src="./img/index/sushi.png" alt="">
+            <a href="#">食譜類滿2000送200</a>
+            <p>豐富蔬菜生鮮，充實食材，美味料理等您嚐鮮。現在下單，享受獨家優惠！</p>
         </li>
         <li>
-            <img src="./img/index/onion.png" alt="">
-            <a href="#">精選食材</a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quasi.</p>
+            <img src="./img/index/seafoodbox.png" alt="">
+            <a href="#">新品上市</a>
+            <p>多種新品上市，為您提供更多美味的健康選擇。</p>
         </li>
     </ul>
 </div>
@@ -171,6 +189,29 @@
             <p>Copyright© 2023 YUAN FOOD Inc.</p>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
     
 </body>
 </html>

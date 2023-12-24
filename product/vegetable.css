@@ -107,7 +107,7 @@ h1 {
 
 .product_table{
     position:relative;
-    z-index: -1;
+    
 }
 
 .bi-heart, .bi-heart-fill {
@@ -115,6 +115,7 @@ h1 {
     color: #DC7878;
     position: absolute;
     right:20px;
+    /* z-index: -1; */
 }
 
 .price {
