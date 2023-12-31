@@ -93,7 +93,7 @@
     padding: 0px 10px 0 10px;
 }
 
-.input1 span:nth-child(5){
+.input1 form span:nth-child(1){
     letter-spacing: -.03rem;
     /* Email */
 }

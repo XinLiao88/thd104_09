@@ -7,14 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="../img/logo_ico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <title>圓食｜最新消息</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/aos.js"></script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>圓食｜最新消息</title>
 </head>
 <body>
     <header class="top">
+        <i class="fa-solid fa-bars"></i>
         <ul class="search">
             <li>
-                <input type="text" placeholder="搜尋產品">
+                <input type="search" placeholder="搜尋產品">
             </li>
             <li class="vip">
                 <a href="../vip/vip_login.html">
@@ -30,8 +41,24 @@
         </ul>
         <ul class="select1">
             <li><a href="./about.html">關於圓石</a></li>
-            <li><a href="./news.html">最新消息</a></li>
-            <li><a href="../product/vegetable1.html">冷藏蔬果</a></li>
+            <li>
+                <a href="./news.html">最新消息</a>
+                <ol>
+                    <a href="./news.html">新品上市</a>
+                    <a href="./news.html">本月優惠</a>
+                </ol>
+            </li>
+            <li>
+                <a href="../product/vegetable1.html">冷藏蔬果</a>
+                <ol>
+                    <a href="../product/vegetable1.html">葉菜類</a>
+                    <a href="../product/vegetable1.html">根莖類</a>
+                    <a href="../product/vegetable1.html">花菜類</a>
+                    <a href="../product/vegetable1.html">菇蕈類</a>
+                    <a href="../product/vegetable1.html">果菜類</a>
+                    <a href="../product/vegetable1.html">飲品類</a>
+                </ol>
+            </li>
         </ul>
         <ul>
             <li class="logo">
@@ -40,9 +67,31 @@
             </li>
         </ul>
         <ul class="select2">
-            <li><a href="../product/fresh_food1.html">冷凍生鮮</a></li>
-            <li><a href="../product/vegetable1.html">蔬食箱類</a></li>
-            <li><a href="#">料理食譜</a></li>
+            <li>
+                <a href="../product/fresh_food1.html">冷凍生鮮</a>
+                <ol>
+                    <a href="../product/fresh_food1.html">生鮮雞肉</a>
+                    <a href="../product/fresh_food1.html">生鮮豬肉</a>
+                    <a href="../product/fresh_food1.html">生鮮牛肉</a>
+                    <a href="../product/fresh_food1.html">生鮮羊肉</a>
+                    <a href="../product/fresh_food1.html">海鮮水產</a>
+                    <a href="../product/fresh_food1.html">其他生鮮</a>
+                </ol>
+            </li>
+            <li>
+                <a href="../product/vegetable1.html">蔬食箱類</a>
+                <ol>
+                    <a href="../product/vegetable1.html">每週蔬食</a>
+                    <a href="../product/vegetable1.html">食譜組合</a>
+                </ol>
+            </li>
+            <li>
+                <a href="#">料理食譜</a>
+                <ol>
+                    <a href="#">葷食組合</a>
+                    <a href="#">素食組合</a>
+                </ol>
+            </li>
         </ul>
     </header>
 
@@ -52,44 +101,62 @@
             <h2>加入會員<br>
             滿額免運</h2>
         </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/news/banner_news.png" alt=""></div>
+                <div class="swiper-slide"><img src="../img/news/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../img/news/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../img/news/banner3.jpg" alt=""></div>
+                <!--<div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
 <!-- ------discount------ -->
-    <div class="title">
+    <div class="title" data-aos="flip-up" >
         <img src="../img/icon/cabbage.svg" alt="">
         <h1>本月優惠</h1>
     </div>
 
     <div class="discount">
-        <ul>
+        <ul data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
             <li>
                 <img src="../img/news/d1.png" alt="">
             </li>
             <li>
                 <a href="#">首次訂購折價100</a>
-                <p>只要您是首次在我們這裡訂購，您將享受高達100元的超值折扣！</p>
+                <p>首次訂購，您將享受高達100元的超值折扣！</p>
         
                 <a href="#">週年慶滿3000打8折</a>
                 <p>在活動期間購物滿三千元，即可享受驚喜八折優惠！</p>
             </li>
         </ul>
-                <ul>
-                    <li>
-                        <img src="../img/news/d2.png" alt="">
-                    </li>
-                    <li>
-                        <a href="#">冷藏類滿1500免運</a>
-                        <p>冷藏滿1500免運，新鮮好味送到您家！</p>
-                
-                        <a href="#">食譜類滿2000送200</a>
-                        <p>豐富蔬菜生鮮，充實食材，美味料理等您嚐鮮。現在下單，享受獨家優惠！</p>
-                    </li>
-                </ul>
+        <ul data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+            <li>
+                <img src="../img/news/d2.png" alt="">
+            </li>
+            <li>
+                <a href="#">冷藏類滿1500免運</a>
+                <p>冷藏滿1500免運，新鮮好味送到您家！</p>
+        
+                <a href="#">食譜類滿2000送200</a>
+                <p>豐富蔬菜生鮮，美味料理等您嚐鮮，享受獨家優惠！</p>
+            </li>
+        </ul>
     </div>
 
 <!-- ------content------ -->
 
-    <div class="title">
+    <div class="title" data-aos="flip-up">
         <img src="../img/icon/cabbage.svg" alt="">
         <h1>新品上市</h1>
     </div>
@@ -148,7 +215,7 @@
         <div class="footer">
             <ul>
                 <li>
-                    <img src="../img/logo_white2.svg" alt="">
+                    <img src="../img/logo_white2.svg" alt="" class="logo_f">
                 </li>
                 <li>
                     <h4>關於我們</h4>
@@ -179,5 +246,10 @@
         </div>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    
+    </script>
 </body>
 </html>

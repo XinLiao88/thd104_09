@@ -7,17 +7,22 @@
 .banner{
     background-image: url(../img/about/banner_about.png);
     background-size: cover;
-    height: 380px;
-    /* margin-top: 80px; */
-    padding-top: 160px;
+    height: 420px;
+    margin-top: 120px;
+    position: relative;
+    /* padding-top: 160px; */
 }
 
 .banner h2{
     text-align: left;
     color: #ffffff;
-    padding-top: 150px;
-    padding-left: 65%;
+    /* padding-top: 150px; */
+    /* padding-left: 65%; */
     text-shadow: #4B4B4B 1px 0 10px;
+    position: absolute;
+    right: 18%;
+    top: 200px;
+    z-index: 2;
 }
 
 
@@ -50,8 +55,9 @@ h1{
 .brand{
     text-align: center;
     font-weight: 300;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     line-height: 2;
+    margin: 0 auto;
 }
 
 
@@ -65,6 +71,7 @@ h1{
 .content ul{
     display: flex; 
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content li{
@@ -89,12 +96,12 @@ h1{
     text-align: left;
 }
 .content img{
-    border-radius: 40px;
+    /* border-radius: 8%; */
     /* width: 560px; */
 }
 
 .content ul:last-child{
-    margin-bottom: 80px;
+    margin-bottom: 5%;
 }
 
 /* body div:nth-child(8){
@@ -102,5 +109,198 @@ h1{
 } */
 
 
+/* ------- RWD ------- */
+@media screen and (max-width: 1220px){
+    .banner{
+        height: 380px;
+        /* margin-bottom: 180px; */
+    }
+    .banner h2{
+        top: 180px;
+    }
+    .brand{
+        padding-bottom: 80px;
+    }
+    .content{
+        /* max-width: 640px; */
+        margin: 0px 3%;}
+
+    .content li, .content p{
+        width: 500px;
+    }
+    .content img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1110px){
+    .banner{
+        height: 340px;
+    }
+    .banner h2{
+        top: 160px;
+        font-size: 14px;
+    }
+    .brand{
+    padding-bottom: 60px;
+    }
+    .content li, .content p{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .content li, .content p{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .content li, .content p{
+        width: 350px;
+    }
+    .brand{
+    padding-bottom: 50px;
+    }
+    .brand p{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .content p{
+        line-height: 1.6;
+    }
+}
+@media screen and (max-width: 820px) {
+    body {
+        font-size: 15px;
+    }
+}
 
 
+    /* --- 開始手機版 --- */
+
+@media screen and (max-width: 790px) {
+    .content {
+        margin: 0 10%;
+    };
+    .banner{
+        height: 280px;
+    }
+    .banner h2{
+        top: 150px;
+        font-size: 13px;
+    }
+    .title img{
+        width: 28px;
+        padding-right: 12px;}
+    h1{
+        font-size: 18px;
+    }
+    .content h3{
+        font-size: 16px;
+    }
+    .brand{
+        /* padding-bottom: 50px; */
+        margin: 0 10%;
+        padding: 0 2% 8%;
+    }
+    .brand p{
+        width: auto;
+    }
+    .content li{
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .content ul:nth-child(2) li:nth-child(2){
+        order:-2;
+        /* width: 200px; */
+    }
+    .content h3{
+        padding: 0;
+    }
+
+    .content p{
+        width: auto;
+        /* padding: 0 20px; */
+        margin-bottom: 8%;
+        font-size: 14px;
+    }
+    .content h3, .content p{
+        padding: 0 4%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .title {
+        margin: 60px auto 22px;
+    }
+    .banner h2{
+        right:calc(50% - 92px);
+    }
+    .brand p{
+        /* width: 500px; */
+    }
+    .content li{
+        /* max-width: 500px; */
+    }
+    .content p{
+        /* width: 480px; */
+        /* margin-bottom: 30px; */
+        /* font-size: 14px; */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner{
+        height: 250px;
+    }
+    .banner h2{
+        /* right: 24%; */
+        top: 120px;
+    }
+    .title img {
+        width: 24px;
+        padding-right: 10px;
+    }
+    h1 {
+        font-size: 17px;
+    }
+    .content h3{
+        font-size: 16px;
+    }
+    .brand p{
+        /* width: 420px; */
+        font-size: 14px;
+    }
+    .content li{
+        /* max-width: 420px; */
+    }
+    .content p{
+        /* width: 400px; */
+        /* margin-bottom: 30px; */
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    .banner h2{
+        /* right: 25%; */
+    }
+    .brand p{
+        /* width: 340px; */
+        font-size: 13px;
+    }
+    .content li{
+        /* max-width: 340px; */
+    }
+    .content h3{
+        font-size: 15px;
+    }
+    .content p{
+        /* width: 320px; */
+        /* margin-bottom: 30px; */
+        font-size: 13px;
+    }
+}

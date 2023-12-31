@@ -23,13 +23,42 @@ body {
  
     display: flex;
     justify-content: center;
-    z-index: 5;
+    z-index: 10;
+}
+
+/* 漢堡 */
+.top .fa-solid{
+    font-size: 24px;
+    /* display: block; */
+    margin: 14px 0 0 22px;
+    display: none;
+    position: fixed;
 }
 
 .top a {
     text-decoration: none;
     color: #4B4B4B;
     display: block;
+}
+
+.top ul {
+    display: flex;
+}
+
+.select1, .select2{
+    /* display: block; */
+}
+
+.select1 li {
+    margin-top: 60px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.select2 li {
+    margin-top: 60px;
+    margin-left: 40px;
+    position: relative;
 }
 
 .top a:hover {
@@ -39,29 +68,86 @@ body {
 .top a img:hover {
     opacity: .8;
 }
+
 /* a:visited,
 a:link,a:active */
 
-.top ul {
-    display: flex;
+.select1 li:hover::after,
+.select2 li:hover::after {
+    content: "";
+    width: 74px;
+    height: 2px;
+    background-color: #78AA8C;
+    display: block;
+    animation: a .4s 1 ease-out forwards;
 }
 
-.select1 li {
-    margin-top: 60px;
-    margin-right: 40px;
+@keyframes a {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
 }
 
-.select2 li {
-    margin-top: 60px;
-    margin-left: 40px;
+/* ---子選單--- */
+.select1 ol, .select2 ol {
+    position: absolute;
+    left:-19px;
+    top:32px;
+    width: 110px;
+    padding: 3px 12px 3px;
+    box-sizing: border-box;
+    background-color: rgba(120,170,140,.8);
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.2));
+    display: none;
 }
 
+.select1 ol a, .select2 ol a{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2.6;
+    letter-spacing: .07rem;
+    color: #ffffff;
+    border: 1px dashed #ffffff;
+    border-width: 0 0 .5px 0;
+}
+
+/* .select1 ol a::before, .select2 ol a::before{
+    content: "";
+    background-color: #fff;
+    width: 4px;
+    height: 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 2px 4px 0 0;
+} */
+
+.select1 ol a:last-child, .select2 ol a:last-child {
+    border: 0px;
+}
+
+.select1 li:hover ol, .select2 li:hover ol{
+    /* display: block; 有ＪＱ特笑不能開*/
+}
+
+.select1 li ol a:hover, .select2 li ol a:hover {
+    color: #d0cfcf;
+}
+
+
+
+/* ---右上區塊--- */
 .top .search {
     float: right;
     margin-left: 550px;
     line-height: 1;
     position: fixed;
-
 }
 
 .search li {
@@ -78,6 +164,7 @@ a:link,a:active */
     margin-right: 8px;
     font-size: 12px;
     padding-left: 36px;
+    padding-right: 6px;
     box-sizing: border-box;
     background-image: url(../img/icon/search.svg);
     background-repeat: no-repeat;
@@ -106,6 +193,9 @@ a:link,a:active */
 .logo img{
     height: 100px;
 }
+
+
+
 
 
 /* --------footer------- */
@@ -173,4 +263,170 @@ footer img {
 footer li:last-child > h4 {
     text-align: left;
     padding-left: 18px;
+}
+
+/* ------- RWD ------- */
+@media screen and (max-width: 790px){
+    .top .fa-solid{
+        display: block;
+    }
+    .top{
+        display: block;
+        height: 110px;
+    }
+    .top ul{
+        display: block;
+    }
+
+    .top .search input{
+        display: none;
+        z-index: 2;
+    }
+    .top .search{
+        display: flex;
+        right: 4%;
+        top: 14px;
+        /* position: static; */
+    }
+    .logo {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-84%);
+    }
+    .logo img {
+        height: 80px;}
+
+    .top{
+        text-align: center;
+    }
+
+    .top .select1{
+        background-color: rgba(255, 255, 255, .95);
+        width: 100%;
+        height: 195px;
+        top: 110px;
+        z-index: 999;
+        position: absolute;
+        /* top:-1px; */
+    }
+    .top .select2{
+        background-color: rgba(255, 255, 255, .95);
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 303.5px;
+    }
+
+    .top .select1,.top .select2{
+        display: none;
+    }
+
+    .top i:hover ~ .select1, .top i:hover ~ .select2{
+        /* display: block; why關掉這個漢堡JQ就可以點了 */
+    }
+
+    .top i:hover~.search{
+        /* opacity: .3; */
+    }
+
+    .select1 li,.select2 li{
+        margin: 14px auto 12px auto ;
+        padding: 0 60px;
+    }
+    .select1 a, .select2 a {
+        line-height: 40px;
+        border: 1px dashed #78AA8C;
+        border-width: 0 0 .7px 0;
+        padding-bottom: 10px;
+        font-size: 16px;
+        /* box-sizing: border-box; */
+    }
+
+    .select2 li:last-child > a{
+        border: 0;
+        border-width: 0;
+    }
+
+    .select1 li:hover::after,
+    .select2 li:hover::after{
+        /* opacity: 0; */
+        visibility: hidden;
+    }
+    .select1 li ol,.select2 li ol{
+        visibility: hidden;
+    }
+    
+    .logo_f{
+        content: url(../img/logo_white.svg);
+        padding-top: 6px;
+        width: 56px;
+    }
+    .footer li{
+        /* padding: 0; */
+        width: 160px;
+    }
+    /* 追蹤我們 */
+    footer li:last-child > h4 {
+        text-align: left;
+        padding-left: 13px;
+    }
+    .footer img{
+      max-width: 80%;
+      padding-top: 16px;
+  }
+} 
+
+@media screen and (max-width: 720px) {
+
+    .footer h4 {
+        font-size: 13px;
+    }
+    .footer a {
+        font-size: 12px;
+    }
+    .footer img{
+        max-width: 70%;
+        padding-top: 20px;
+    }
+    footer{
+        padding: 8px 30px 0;
+        letter-spacing: .07rem;
+    }
+    .footer li{
+        padding: 0;
+        width: 100px;
+    }
+    /* 追蹤我們 */
+    footer li:last-child > h4 {
+        text-align: left;
+        padding-left: 8px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    footer{
+        padding: 7px 20px 0;    
+    }
+    .logo_f{
+        width: 36px;
+    }
+    .footer img{
+        max-width: 60%;
+        padding-top: 22px;
+    }
+    .footer h4{
+        font-size: 12px;
+    }
+    .footer a{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 450px){
 }

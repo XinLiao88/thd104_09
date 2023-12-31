@@ -7,15 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="../img/logo_ico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <title>關於圓食</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/aos.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>關於圓食</title>
 </head>
 
 <body>
     <header class="top">
+        <i class="fa-solid fa-bars"></i>
         <ul class="search">
             <li>
-                <input type="text" placeholder="搜尋產品">
+                <input type="search" placeholder="搜尋產品">
             </li>
             <li class="vip">
                 <a href="../vip/vip_login.html">
@@ -31,19 +39,54 @@
         </ul>
         <ul class="select1">
             <li><a href="./about.html">關於圓石</a></li>
-            <li><a href="./news.html">最新消息</a></li>
-            <li><a href="../product/vegetable1.html">冷藏蔬果</a></li>
+            <li>
+                <a href="./news.html">最新消息</a>
+                <ol>
+                    <a href="./news.html">新品上市</a>
+                    <a href="./news.html">本月優惠</a>
+                </ol>
+            </li>
+            <li><a href="../product/vegetable1.html">冷藏蔬果</a>
+                <ol>
+                    <a href="../product/vegetable1.html">葉菜類</a>
+                    <a href="../product/vegetable1.html">根莖類</a>
+                    <a href="../product/vegetable1.html">花菜類</a>
+                    <a href="../product/vegetable1.html">菇蕈類</a>
+                    <a href="../product/vegetable1.html">果菜類</a>
+                    <a href="../product/vegetable1.html">飲品類</a>
+                </ol>
+            </li>
         </ul>
         <ul>
             <li class="logo">
                 <a href="../index.html">
-                    <img src="../img/LOGO1216.svg" alt=""></a>
+                    <img src="../img/LOGO1226.svg" alt=""></a>
             </li>
         </ul>
         <ul class="select2">
-            <li><a href="../product/fresh_food1.html">冷凍生鮮</a></li>
-            <li><a href="../product/vegetable1.html">蔬食箱類</a></li>
-            <li><a href="#">料理食譜</a></li>
+            <li><a href="../product/fresh_food1.html">冷凍生鮮</a>
+                <ol>
+                    <a href="../product/fresh_food1.html">生鮮雞肉</a>
+                    <a href="../product/fresh_food1.html">生鮮豬肉</a>
+                    <a href="../product/fresh_food1.html">生鮮牛肉</a>
+                    <a href="../product/fresh_food1.html">生鮮羊肉</a>
+                    <a href="../product/fresh_food1.html">海鮮水產</a>
+                    <a href="../product/fresh_food1.html">其他生鮮</a>
+                </ol>
+            </li>
+            <li><a href="../product/vegetable1.html">蔬食箱類</a>
+                <ol>
+                    <a href="../product/vegetable1.html">每週蔬食</a>
+                    <a href="../product/vegetable1.html">食譜組合</a>
+                </ol>
+            </li>
+            <li>
+                <a href="#">料理食譜</a>
+                <ol>
+                    <a href="#">葷食組合</a>
+                    <a href="#">素食組合</a>
+                </ol>
+            </li>
         </ul>
     </header>
 
@@ -52,17 +95,17 @@
 
     <div class="banner">
         <div>
-            <h2>新鮮滋味，樂享每一口。</h2>
+            <h2 data-aos="fade-left">新鮮滋味，樂享每一口。</h2>
         </div>
     </div>
 
 <!-- ------content------ -->
-    <div class="title">
+    <div class="title" data-aos="zoom-in">
         <img src="../img/icon/cabbage.svg" alt="">
         <h1>品牌理念 Brand Philosophy</h1>
     </div>
 
-    <div class="brand">
+    <div class="brand" data-aos="zoom-in">
         <p>品牌理念：現代人越來越重視養身，但身在忙碌的世紀，上班族比較難有時間可以採買食材。<br>
         圓食提供食材宅配服務，以及推薦多種健康食譜，配合食譜提供搭配組合好的食材箱，<br>
         讓不擅長烹飪的人也只要照著步驟做即可，不用花時間一個一個食材去買。<br>
@@ -71,7 +114,7 @@
     </div>
 
     <div class="content">
-        <ul>
+        <ul data-aos="zoom-in">
             <li>
                 <img src="../img/about/about1.png" alt="">
             </li>
@@ -81,7 +124,7 @@
             </li>
         </ul>
 
-        <ul>
+        <ul data-aos="zoom-in">
         
             <li>
                 <h3>「時尚烹飪，圓滿生活。」</h3>
@@ -92,7 +135,7 @@
             </li>
         </ul>
 
-        <ul>
+        <ul data-aos="zoom-in">
             <li>
                 <img src="../img/about/about3.png" alt="">
             </li>
@@ -113,7 +156,7 @@
         <div class="footer">
             <ul>
                 <li>
-                    <img src="../img/logo_white2.svg" alt="">
+                    <img src="../img/logo_white2.svg" alt="" class="logo_f">
                 </li>
                 <li>
                     <h4>關於我們</h4>
@@ -144,6 +187,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      
+    </script>
 </body>
 
 </html>

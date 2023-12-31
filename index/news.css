@@ -5,21 +5,76 @@
 /* ------banner------- */
 
 .banner{
-    background-image: url(../img/news/banner_news.png);
-    background-size: cover;
-    height: 380px;
-    /* margin-top: 80px; */
-    padding-top: 160px;
+    position: relative;
+    padding-bottom: 100px;
+    top: 120px;
 }
 
 .banner h2{
     text-align: left;
     color: #ffffff;
-    padding-top: 150px;
-    padding-left: 65%;
-    /* text-shadow: #4B4B4B 1px 0 10px; */
+    text-shadow: rgba(75, 75, 75, .5) 0px 0 8px;
+    position: absolute;
+    right: 18%;
+    top: 200px;
+    z-index: 2;
 }
 
+/* ------輪播------ */
+
+html,
+body {
+    /* position: relative; */
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 420px;
+    /* top: 120px; */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #AAAAAA !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    --swiper-navigation-size: 40px;
+}
+
+/* 改點點顏色 */
+:root {
+    --primary-green: #AAAAAA;
+}
+
+.swiper-pagination-bullet {
+    background: var(--primary-green) !important;
+}
+
+/* ------title------ */
 
 .title{
     display: flex;
@@ -59,15 +114,24 @@ h1{
     flex-wrap: wrap;
     /* flex-grow: 1; */
     margin-bottom: 50px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .discount li {
     /* flex-grow: 1; */
     margin: 20px 10px;
 }
+.discount ul:first-child li:last-child{
+    margin-right: 24px;
+}
 
-.discount a, h3 {
+.discount img {
+    /* border-radius: 40px; */
+    width: 320px;
+    padding-right: 10px;
+    /* display: block; */
+}
+.discount a{
     padding-top: 10px;
 }
 
@@ -80,22 +144,15 @@ h1{
 
 .discount p {
     color: #AAAAAA;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     letter-spacing: .1rem;
-    /* width: 238px; */
     /* margin: 0 auto; */
     text-align-last: left;
-    width: 220px;
+    width: 210px;
     padding-bottom: 20px;
 }
 
-.discount img {
-    border-radius: 40px;
-    width: 320px;
-    padding-right: 10px;
-    /* display: block; */
-}
 
 /* ------content------ */
 
@@ -110,7 +167,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .content li{
@@ -150,4 +207,296 @@ h1{
     margin-bottom: 300px;
 } */
 
+/* ------- RWD ------- */
 
+@media screen and (max-width: 1220px) {
+    .swiper {
+        height: 380px;
+    }
+    .banner h2 {
+        top: 180px;
+    }
+    .discount{
+        max-width: 1100px;
+        margin: 0px 40px;
+    }
+    .discount ul{
+        margin-bottom: 20px;
+    }
+    .discount li{
+        margin: 16px 6px;
+    }
+   .discount img{
+        width: 280px;
+    }
+    .content {
+        /* max-width: 640px; */
+        margin: 0px 40px;
+    }
+    .content ul{
+        margin-bottom: 4px;
+    }
+    .content img {
+        width: 250px;
+        margin-bottom: 6px;
+    }
+    .content a {
+        margin-bottom: 5px;
+    }
+    .content p {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .discount img{
+        width: 260px;
+    }
+    .discount p{
+        width: 200px;
+    }
+    .content {
+        margin: 0px 34px;
+    }
+    .content img {
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width: 1110px) {
+    .swiper {
+        height: 340px;
+        /* margin-bottom: 170px; */
+    }
+    .banner h2 {
+        top: 160px;
+        right: 10%;
+        font-size: 14px;
+    }
+    .discount{
+        margin: 0px 20px;
+    }
+    .discount img{
+        width: 250px;
+    }
+    .discount a{
+    padding-top: 4px;
+    }
+    .discount p{
+        width: 180px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .content {
+        margin: 0px 20px;
+    }
+    .content li {
+        margin: 20px 5px;
+    }
+    .content img {
+        width: 230px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .discount{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .discount ul{
+        margin: 0 auto;
+        width:280px;
+    }
+    .discount li{
+        margin: 0;
+        padding: 0;
+        height:auto;
+    }
+    .discount ul li:nth-child(2){
+        /* padding: 0 10px; */
+        /* width: 220px; */
+    }
+    .discount ul:first-child li:last-child{
+        margin-right: 0px;
+    }
+    .discount img {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .discount a,.discount p{
+        width: 94%;
+        /* padding-bottom: 10px; */
+        margin: 0 auto;
+    }
+    .discount p{
+        height: 40px;
+    }
+    .content img {
+        width: 220px;
+        margin-bottom: 4px;
+    }
+    .content p {
+        width: 190px;
+    }
+    .content a {
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .content {
+        max-width: 660px;
+        margin: 0px auto;
+    }
+    .content img {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* --- 開始手機版 --- */
+
+@media screen and (max-width: 790px) {
+    body {
+        /* font-size: 16px; */
+    }
+    .swiper {
+        height: 280px;
+        /* margin-bottom: 170px; */
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+    --swiper-navigation-size: 30px;
+    }
+    .banner h2 {
+        top: 130px;
+        right: 12%;
+        font-size: 13px;
+    }
+    .title img {
+        width: 28px;
+        padding-right: 12px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .discount{
+        max-width: 600px;
+    }
+    .discount ul{
+        margin: 0 auto;
+        width:240px;
+    }
+    .discount p{
+        height: 60px;
+        font-size: 13px;
+    }
+    .content {
+        max-width: 600px;
+    }
+    .content li {
+        margin: 12px auto;
+    }
+    .content img {
+        width: 240px;
+    }
+    .content p {
+        width: 160px;
+        font-size: 13px;
+    }
+    .news {
+        letter-spacing: .07rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .title {
+        margin: 60px auto 22px;
+    }
+    .discount{
+        max-width: 520px;
+    }
+    .discount ul{
+        width: 200px;
+    }
+    .content {
+        max-width: 520px;
+    }
+    .content img {
+        width: 200px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .swiper {
+        height: 250px;
+        /* margin-bottom: 160px; */
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+    --swiper-navigation-size: 22px;
+    }
+    .banner h2 {
+        right: 24%;
+        top: 120px;
+    }
+    .title img {
+        width: 24px;
+        padding-right: 10px;
+    }
+    h1 {
+        font-size: 17px;
+    }
+    .discount{
+        max-width: 440px;
+    }
+    .discount ul{
+        width: 180px;
+    }
+    .discount a{
+        letter-spacing: .1rem;
+    }
+    .discount p{
+        font-size: 12px;
+        /* height: 40px; */
+    }
+
+    .content {
+        max-width: 440px;
+    }
+    .content img {
+        width: 180px;
+    }
+    .content p {
+        width: 160px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .discount{
+        max-width: 360px;
+    }
+    .discount ul{
+        width: 150px;
+    }
+    .content {
+        max-width: 360px;
+    }
+    .content img {
+        width: 150px;
+    }
+    .banner h2 {
+        right: 20%;
+    }
+
+}

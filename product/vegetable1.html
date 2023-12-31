@@ -9,16 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="icon" href="../img/logo_ico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/js.js"></script>
     <title>圓食｜冷藏蔬果</title>
 </head>
 
 <body>
     <header class="top">
+        <i class="fa-solid fa-bars"></i>
         <ul class="search">
             <li>
-                <input type="text" placeholder="搜尋產品">
+                <input type="search" placeholder="搜尋產品">
             </li>
             <li class="vip">
                 <a href="../vip/vip_login.html">
@@ -34,20 +37,57 @@
         </ul>
         <ul class="select1">
             <li><a href="../index/about.html">關於圓石</a></li>
-            <li><a href="../index/news.html">最新消息</a></li>
-            <li><a href="../product/vegetable1.html">冷藏蔬果</a></li>
-        </ul>
-        <ul>
-            <li class="logo">
-                <a href="../index.html">
-                    <img src="../img/LOGO1216.svg" alt=""></a>
+            <li><a href="../index/news.html">最新消息</a>
+                <ol>
+                    <a href="../index/news.html">新品上市</a>
+                    <a href="../index/news.html">本月優惠</a>
+                </ol>
             </li>
-        </ul>
-        <ul class="select2">
-            <li><a href="../product/fresh_food1.html">冷凍生鮮</a></li>
-            <li><a href="../product/vegetable1.html">蔬食箱類</a></li>
-            <li><a href="#">料理食譜</a></li>
-        </ul>
+            <li>
+                <a href="../product/vegetable1.html">冷藏蔬果</a>
+                <ol>
+                    <a href="../product/vegetable1.html">葉菜類</a>
+                    <a href="../product/vegetable1.html">根莖類</a>
+                    <a href="../product/vegetable1.html">花菜類</a>
+                    <a href="../product/vegetable1.html">菇蕈類</a>
+                    <a href="../product/vegetable1.html">果菜類</a>
+                    <a href="../product/vegetable1.html">飲品類</a>
+                </ol>
+            </li>
+            </ul>
+            <ul>
+                <li class="logo">
+                    <a href="../index.html">
+                        <img src="../img/LOGO1226.svg" alt=""></a>
+                </li>
+            </ul>
+            <ul class="select2">
+                <li>
+                    <a href="../product/fresh_food1.html">冷凍生鮮</a>
+                    <ol>
+                        <a href="../product/fresh_food1.html">生鮮雞肉</a>
+                        <a href="../product/fresh_food1.html">生鮮豬肉</a>
+                        <a href="../product/fresh_food1.html">生鮮牛肉</a>
+                        <a href="../product/fresh_food1.html">生鮮羊肉</a>
+                        <a href="../product/fresh_food1.html">海鮮水產</a>
+                        <a href="../product/fresh_food1.html">其他生鮮</a>
+                    </ol>
+                </li>
+                <li>
+                    <a href="../product/vegetable1.html">蔬食箱類</a>
+                    <ol>
+                        <a href="../product/vegetable1.html">每週蔬食</a>
+                        <a href="../product/vegetable1.html">食譜組合</a>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">料理食譜</a>
+                    <ol>
+                        <a href="#">葷食組合</a>
+                        <a href="#">素食組合</a>
+                    </ol>
+                </li>
+            </ul>
     </header>
     
     <!-- ------menu------ -->
@@ -115,7 +155,7 @@
                         <button>-</button>
                         <span class="count">1</span>
                         <button>+</button>
-                        <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                        <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>     
             </li>
         </ul>
@@ -137,7 +177,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -159,7 +199,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -181,7 +221,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -203,7 +243,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
             </ul>
@@ -225,7 +265,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -247,7 +287,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -269,7 +309,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -291,7 +331,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -313,7 +353,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -335,7 +375,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -357,7 +397,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -379,7 +419,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -401,7 +441,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -423,7 +463,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -445,7 +485,7 @@
                     <button>-</button>
                     <span class="count">1</span>
                     <button>+</button>
-                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                    <button class="add_cart"><i class="fa-solid fa-cart-shopping"></i><span>加入購物車</span></button>
                 </div>
             </li>
         </ul>
@@ -453,7 +493,8 @@
 
     </div>
 
-    
+
+    <div class="back-top hide" title="回頂部"></div>
 
 
 
@@ -463,7 +504,7 @@
         <div class="footer">
             <ul>
                 <li>
-                    <img src="../img/logo_white2.svg" alt="">
+                    <img src="../img/logo_white2.svg" alt="" class="logo_f">
                 </li>
                 <li>
                     <h4>關於我們</h4>
@@ -509,22 +550,55 @@
             //     this.classList.add("bi-heart");
             // });
 
-            var like = document.getElementById("like");
-            like.addEventListener("click", function () {
-                if(like.class = "bi-heart"){
-                    // console.log(this);
-                    this.classList.remove("bi-heart");
-                    this.classList.add("bi-heart-fill");
-                }else{
-                    like.class = "bi-heart-fill";
-                    // console.log(this);
-                    this.classList.remove("bi-heart-fill");
-                    this.classList.add("bi-heart");
-                }
-               }
-               );
-                
+         
+            // $('.select1 ol').mouseover(function(){ 
+            //     slidedown(600, 'easeOutBounce') })
+
+            // $('.select2 a').hover(function(a) { $(this).siblings('ol').slideDown(400)})
+            // $('.select2 a').mouseleave(function (a) { $(this).siblings('ol').slideUp(400) })
+            // $('.select2 ol').mouseleave(function (a) { $(this).slideUp(400)})
+            // $('select1 ol').animate(slideToggle())
+
+
+
+            // var like = document.getElementById("like");
+            // like.addEventListener("click", function () {
+            //     if(like.class = "bi-heart"){
+            //         // console.log(this);
+            //         this.classList.remove("bi-heart");
+            //         this.classList.add("bi-heart-fill");
+            //     }else{
+            //         like.class = "bi-heart-fill";
+            //         // console.log(this);
+            //         this.classList.remove("bi-heart-fill");
+            //         this.classList.add("bi-heart");
+            //     }
+            // });                
         }
+
+        // $(document).ready(function () {
+        //         // 捲軸偵測距離頂部超過 ＊ 才顯示按鈕
+        //         $(window).scroll(function () {
+        //             if ($(window).scrollTop() > 900) {
+        //                 if ($(".back-top").hasClass("hide")) {
+        //                     $(".back-top").toggleClass("hide");
+        //                 }
+        //             } else {
+        //                 $(".back-top").addClass("hide");
+        //             }
+        //         });
+
+        //         // 點擊按鈕回頂部
+        //         $(".back-top").on("click", function (event) {
+        //             $("html, body").animate(
+        //                 {
+        //                     scrollTop: 0
+        //                 },
+        //                 500 // 回頂部時間為 500 毫秒
+        //             );
+        //         });
+        //     });
+
 
     </script>
 </body>
