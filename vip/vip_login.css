@@ -17,7 +17,7 @@
 
 .content{
     width: 400px;
-    height: 600px;
+    /* height: 600px; */
     margin: 60px auto;
     display:block;
 }
@@ -169,7 +169,195 @@ input {
 }
 
 
+/* ------- RWD ------- */
 
+@media screen and (max-width: 790px) {
+    .table{
+        width: 520px;
+        height: 490px;
+        border-radius: 36px;
+    }
+    .content{
+        width: 360px;
+        margin: 50px auto;
+    }
+    .table h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .content input{
+        font-size: 16px;
+    }
+    .input input {
+        padding-left: 56px;
+    }
+    .input input, .content .input2{
+        border-radius: 14px;
+        width: 360px;
+        height: 50px;
+        background-size: 18px;
+        margin: 22px 0 16px 0;
+        
+    }
+    .content .input2 img {
+        height: 20px;
+        padding: 12px 4px 0 22px;
+    }
+    .input2 input {
+        height: 48px;
+    }
+    .input2 i {
+        line-height: 48px;
+        font-size: 16px;
+    }
+    .table ul {
+        padding-bottom: 30px;
+    }
+    /* 登入按鈕 */
+    .content input[type="submit"]{
+        font-size: 15px;
+        width: 240px;
+        height: 46px;
+        border-radius: 12px;
+    }
+        /* 核取方塊 */
+    .table li input{
+        width: 20px;
+    }
+    .table label {
+        font-size: 15px;
+    }
+    .table ul a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .table{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .table{
+        width: 400px;
+        height: 380px;
+        border: 2px solid;
+        border-radius: 30px;
+    }
+    .content{
+        width: 300px;
+        margin: 34px auto;
+    }
+    .table h1{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .input input {
+        padding-left: 52px;
+    }
+    .content input{
+        font-size: 14px;
+    }
+     .input input, .content .input2{
+        border-radius: 12px;
+        width: 300px;
+        height: 46px;
+        background-size: 16px;
+        margin: 18px 0 10px 0;
+    }
+    .content .input2 img{
+        height: 17px;
+        padding: 13px 4px 0 22px;
+    }
+    .input2 input {
+        height: 44px;
+    }
+    .input2 i {
+        line-height: 46px;
+        font-size: 14px;
+    }
+    .table ul {
+        padding-bottom: 20px;
+    }
+    /* 登入按鈕 */
+    .content input[type="submit"]{
+        font-size: 13px;
+        width: 200px;
+        height: 38px;
+        border-radius: 10px;
+    }
+    /* 核取方塊 */
+    .table li input{
+        width: 16px;
+    }
+    .table label {
+        font-size: 13px;
+    }
+    .table ul a{
+        font-size: 12px;
+    }   
+}
+
+@media screen and (max-width: 450px){
+    .table{
+        width: 340px;
+        height: 360px;
+        border-radius: 26px;
+    }
+    .content{
+        width: 260px;
+        margin: 30px auto;
+    }
+    .table h1{
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+    .input input {
+        padding-left: 42px;
+        background-position: 15px 14px;
+    }
+    .content input{
+        font-size: 13px;
+    }
+     .input input, .content .input2{
+        /* border-radius: 12px; */
+        width: 260px;
+        height: 44px;
+        background-size: 14px;
+        margin: 16px 0 8px 0;
+    }
+    .content .input2 img{
+        height: 16px;
+        padding: 13px 0px 0 16px;
+    }
+    .input2 input {
+        height: 42px;
+    }
+    .input2 i {
+        line-height: 42px;
+        font-size: 12px;
+    }
+    .table ul {
+        padding-bottom: 20px;
+    }
+    /* 登入按鈕 */
+    .content input[type="submit"]{
+        font-size: 12px;
+        width: 180px;
+        height: 34px;
+    }
+    /* 核取方塊 */
+    .table li input{
+        /* width: 16px; */
+    }
+    .table label {
+        font-size: 12px;
+    }
+    .table ul a{
+        font-size: 10px;
+    }   
+}
 
 
 

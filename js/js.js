@@ -1,16 +1,19 @@
 $(document).ready(function () {
     
-    // 子選單 有時會怪怪的
-    $('.select1 li').hover(function () { $(this).find('ol').slideToggle(350) })
-    $('.select2 li').hover(function () { $(this).find('ol').slideToggle(300) })
-    // .css('display', 'block')
+
 
 
     // 漢堡
     $('.fa-solid').click(function () {
         $(this).siblings('.select1').fadeToggle(200)
         $(this).siblings('.select2').fadeToggle(200)
+
     })
+    // $('body').not(this).click(function (e) {
+    //     e.stopPropagation();
+    //     console.log(1);
+    //     $('.select1').css('display','none');
+    // });
 
     // 收藏按鈕 謝謝李偉銘老師
     $('.bi').click(function (e) {
@@ -27,9 +30,12 @@ $(document).ready(function () {
     });
 
     
+
+    
+
     // 捲軸偵測距離頂部超過 ＊ 才顯示按鈕
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 850) {
+        if ($(window).scrollTop() > 700) {
             if ($(".back-top").hasClass("hide")) {
                 $(".back-top").toggleClass("hide");
             }
@@ -49,7 +55,5 @@ $(document).ready(function () {
     });
 
   
-    
-
 
 });

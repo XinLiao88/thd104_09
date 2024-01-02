@@ -44,9 +44,10 @@ h1 {
     width: 180px;
 }
 
-/* .menu li{
-    padding: 0 5px;
-} */
+.menu li{
+    /* padding: 0 5px; */
+    box-sizing: border-box;
+}
 
 
 .line{
@@ -57,7 +58,6 @@ h1 {
 .line2{
     display: flex;
     justify-content: center;
-    /* width: 100%; */
 }
 
 .menu a{
@@ -131,10 +131,11 @@ h1 {
     text-decoration: line-through;
 }
 
-.count span{
+.count{
     padding: 0 8px;
     align-items: center ;
     font-size: 15px;
+    letter-spacing: .07rem;
 }
 
 .button button{
@@ -176,6 +177,9 @@ h1 {
     background-color: #DC7878;
     color: #ffffff;
 }
+.content img{
+    /* border: 1px blue solid; */
+}
 
 
 /* ------TOP button------ */
@@ -211,11 +215,16 @@ h1 {
 
 
 /* ------- RWD ------- */
+@media screen  and (max-width: 1500px){
+    .back-top{
+        left: 95%;
+    }
+}
 
 @media screen and (max-width: 1220px) {
     .content {
         /* max-width: 640px; */
-        margin: 0px 40px;
+        margin: 0px 50px;
     }
     .content ul{
         width: 250px;
@@ -230,41 +239,50 @@ h1 {
 
     .button .add_cart{
         width: auto;
+        margin-left: 16px;
     }
-    .bi-heart, .bi-heart-fill {
-        font-size: 24px;
-        right:20px;
-}
+    .count{
+        padding: 2px;
+    }
 }
 
 @media screen and (max-width: 1160px) {
     .content {
-        margin: 0px 34px;
+        margin: 0px 40px;
     }
-
     .content ul {
         width: 230px;
-    }
-    .content ul {
         margin: 20px 5px;
+    }
+    .content div{
+        padding-left: 12px;
+        /* padding-bottom: 4px; */
+    }
+
+    .button .add_cart{
+        margin-left: 12px;
+    }
+    .bi-heart, .bi-heart-fill {
+        font-size: 23px;
+        right: 12px;
     }
 }
 
 @media screen and (max-width: 1110px) {
     .content {
-        margin: 0px 20px;
+        margin: 0px 34px;
     }
     .content ul {
         margin: 20px 4px;
         width: 224px;
     }
-    .count span{
+    .count{
         padding: 0 4px;
         font-size: 14px;
     }
     .button .add_cart{
         font-size: 13px;
-        margin-left: 10px;
+        margin-left: 8px;
         border-radius: 8px;
     }
     .add_cart span{
@@ -278,11 +296,13 @@ h1 {
     .content ul {
         width: 216px;
     }
-    .count span{
+    .count{
         padding: 0 2px;
         /* font-size: 14px; */
     }
-
+    .content div {
+        padding-bottom: 3px;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -296,8 +316,12 @@ h1 {
     .content img {
         /* width: 260px; */
     }
-    .count span{
-        padding: 0px;
+    .content div{
+        padding-left: 12px;
+        padding-bottom: 2px;
+    }
+    .count{
+        padding: 0px 4px;
         letter-spacing: .05rem;
     }
     .button button{
@@ -309,9 +333,10 @@ h1 {
 
     .button .add_cart{
         font-size: 12px;
-        margin-left: 8px;
+        /* margin-left: 10px; */
         border-radius: 8px;
         padding: 0 3px;
+        width: 96px;
     }
     .add_cart span{
         font-size: 12px;
@@ -319,7 +344,7 @@ h1 {
 }
 
 @media screen and (max-width: 820px) {
-    body {
+    body, .content .price, .content .original_price {
         font-size: 15px;
     }
     .title{
@@ -363,18 +388,25 @@ h1 {
         width: 240px;
     }
     .content div{
-        padding-left: 10px;
+        /* padding-left: 10px; */
         padding-bottom: 1px;
     }
     .content p {
         /* font-size: 13px; */
     }
     .button .add_cart{
-        /* font-size: 12px; */
-        /* margin-left: 8px; */
-        /* border-radius: 8px; */
+        margin-left: 20px;
         /* padding: 0 3px; */
-        width: 110px;
+        width: 104px;
+    }
+    .bi-heart, .bi-heart-fill{
+        right: 8%;
+    }
+    .back-top{
+        left: 90%;
+        width: 36px;
+        height: 36px;
+        background-size: 22px 22px;
     }
 }
 
@@ -392,9 +424,23 @@ h1 {
         font-size: 14px;
     }
     .bi-heart, .bi-heart-fill{
+        font-size: 21px;
         right: 1%;
     }
+    .button .add_cart{
+        margin-left: 14px;
+        /* padding: 0 3px; */
+        width: 100px;
+    }
+    .back-top{
+        left: 92%;
+        width: 30px;
+        height: 30px;
+        background-size: 20px 20px;
+    }
 }
+    
+
 
 @media screen and (max-width: 550px) {
     .title img {
@@ -423,9 +469,18 @@ h1 {
         /* width: 160px;
         font-size: 12px; */
     }
-    .button .add_cart{
-        width: auto;
+    .button button{
+        /* font-size: 12px; */
+        /* letter-spacing: .05rem; */
+        width: 22px;
+        height: 22px;
+        margin-top: 2px;
     }
+    .button .add_cart{
+        margin-left: 8px;
+        width: 90px;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -454,16 +509,29 @@ h1 {
     .content ul {
         width: 150px;
     }
+    .content div{
+        padding-left: 8px;
+        padding-bottom: 0px;
+    }
+
+    body, .content .price, .content .original_price {
+        font-size: 14px;
+    }
+    .quantity{
+        font-size: 10px;
+    }
     .button button{
         font-size: 12px;
         letter-spacing: .05rem;
+        width: 22px;
+        height: 22px;
     }
-    .count span{
+    .count{
         padding: 0 8px;
     }
     .button .add_cart{
         font-size: 14px;
-        /* margin: 8px 0 0 0; */
+        margin-left: 4px;
         border-radius: 20px;
         /* width: 100%; */
         /* align-items: center; */
@@ -478,5 +546,8 @@ h1 {
         top: -155px;
         right: 4px;
         font-size: 18px;
+    }
+    .back-top{
+        left: 90%;
     }
 }

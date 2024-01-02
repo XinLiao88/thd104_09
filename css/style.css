@@ -208,6 +208,7 @@ footer {
     color: #ffffff;
     text-align: center;
     box-sizing: border-box;
+    margin-top: 100px;
 }
 
 .footer {
@@ -266,6 +267,9 @@ footer li:last-child > h4 {
 }
 
 /* ------- RWD ------- */
+@media screen and (max-width:1220px){
+   
+}
 @media screen and (max-width: 790px){
     .top .fa-solid{
         display: block;
@@ -359,7 +363,7 @@ footer li:last-child > h4 {
     }
     
     .logo_f{
-        content: url(../img/logo_white.svg);
+        content: url(../img/LOGO_white.svg);
         padding-top: 6px;
         width: 56px;
     }
@@ -411,7 +415,8 @@ footer li:last-child > h4 {
 
 @media screen and (max-width: 550px){
     footer{
-        padding: 7px 20px 0;    
+        padding: 7px 20px 0;  
+        margin-top: 60px;  
     }
     .logo_f{
         width: 36px;

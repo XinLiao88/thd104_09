@@ -76,7 +76,150 @@
 }
 
 
+/* ------- RWD ------- */
 
+@media screen and (max-width: 790px) {
+    .table {
+        width: 520px;
+        height: 400px;
+        border-radius: 36px;
+    }
+
+    .content {
+        width: 360px;
+        margin: 50px auto;
+    }
+
+    .table h1 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .content input {
+        font-size: 16px;
+    }
+
+    .input input {
+        padding-left: 56px;
+    }
+
+    .input input{
+        border-radius: 14px;
+        width: 360px;
+        height: 50px;
+        background-size: 18px;
+        margin: 22px 0 16px 0;
+    }
+
+    /* 登入按鈕 */
+    .content input[type="submit"] {
+        font-size: 15px;
+        width: 240px;
+        height: 46px;
+        border-radius: 12px;
+    }
+    .table p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .table {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .table {
+        width: 400px;
+        height: 300px;
+        border: 2px solid;
+        border-radius: 30px;
+    }
+
+    .content {
+        width: 300px;
+        margin: 34px auto;
+    }
+
+    .table h1 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .input input {
+        padding-left: 52px;
+    }
+
+    .content input {
+        font-size: 14px;
+    }
+
+    .input input {
+        border-radius: 12px;
+        width: 300px;
+        height: 46px;
+        background-size: 16px;
+        margin: 18px 0 10px 0;
+    }
+
+
+    /* 登入按鈕 */
+    .content input[type="submit"] {
+        font-size: 13px;
+        width: 200px;
+        height: 38px;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+   
+}
+
+@media screen and (max-width: 450px) {
+    .table {
+        width: 340px;
+        height: 280px;
+        border-radius: 26px;
+    }
+
+    .content {
+        width: 260px;
+        margin: 30px auto;
+    }
+
+    .table h1 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .input input {
+        padding-left: 42px;
+        background-position: 15px 14px;
+    }
+
+    .content input {
+        font-size: 13px;
+    }
+
+    .input input{
+        /* border-radius: 12px; */
+        width: 260px;
+        height: 44px;
+        background-size: 14px;
+        margin: 16px 0 8px 0;
+    }
+
+    /* 登入按鈕 */
+    .content input[type="submit"] {
+        font-size: 12px;
+        width: 180px;
+        height: 34px;
+    }
+    .table p {
+        font-size: 11px;
+    }
+
+}
 
 
 
