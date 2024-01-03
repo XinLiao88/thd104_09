@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./forgotpw.css" rel="stylesheet" type="text/css" />
+    <link href="./recipe.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="icon" href="../img/logo_ico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../js/jquery-3.7.1.js"></script>
     <script src="../js/js.js"></script>
-    <title>圓食｜忘記密碼</title>
+    <script src="../js/aos.js"></script>
+
+    <title>圓食｜冷藏蔬果</title>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
                 <a href="../product/cart.html">
                     <img src="../img/icon/cart.svg" alt="">
                 </a>
-
+    
             </li>
         </ul>
         <ul class="select1">
@@ -88,27 +93,81 @@
                 </li>
             </ul>
     </header>
-    <!-- ------content------ -->
+    
+    <!-- ------menu------ -->
 
-    <div class="table">
-
-        <div class="content">
-
-            <h1>忘記密碼?</h1>
-            <div class="input">
-                <input type="text" placeholder="請輸入E-mail">
-            </div>
-
-            <p>我們將透過電子郵件給您發送連結，以重設您的密碼</p>
-            <!-- <a href=""><img src="../img/button/Property 1=login, Property 2=on.png" alt=""></a> -->
-            <form action="setpw.html">
-                <input type="submit" value="送出" />
-            </form>
-           
-            <!-- <button>登入</button> -->
-
-        </div>
+    <div class="title">
+        <img src="../img/icon/cabbage.svg" alt="">
+        <h1>蔬食箱類</h1>
     </div>
+
+
+    <div class="main">
+        <!-- ------content------ -->
+
+    <div class="title" data-aos="flip-up">
+        <img src="../img/icon/cabbage.svg" alt="">
+        <h1>葷食組合</h1>
+    </div>
+    <!-- <div class="table">  -->
+    <div class="content" data-aos="zoom-in-up">
+        <ul>
+            <li data-aos="zoom-in-up">
+                <img src="../img/recipe/rfish.png" alt="">
+            </li>
+            <li data-aos="zoom-in-up">
+                <h3>香煎鯖魚配橄欖莎莎醬</h3>
+                <h4>材料：</h4>
+                <p>鯖魚柳（兩份）</p>
+                <p>橄欖油</p>
+                <p> 新鮮檸檬汁</p>
+                <p> 莎莎醬（番茄、洋蔥、橄欖、香草、橄欖油、鹽和胡椒）</p>
+                    
+                <h4>步驟：</h4>
+                <p>1.將鯖魚柳洗淨，用紙巾擦乾水分，撒上少量鹽和胡椒。</p>
+                <p>2.熱鍋中加入橄欖油，將鯖魚柳兩面煎至金黃色，確保熟透。</p>
+                <p>3.準備莎莎醬，將番茄、洋蔥、橄欖、香草混合，加入橄欖油、檸檬汁、鹽和胡椒調味。</p>
+                <p>4.將香煎的鯖魚柳擺盤，淋上橄欖莎莎醬，即可享受美味的健康料理。</p>
+
+            </li>
+        </ul>
+    </div>
+
+    
+    <!-- </div> -->
+    <div class="title" data-aos="flip-up">
+        <img src="../img/icon/cabbage.svg" alt="">
+        <h1>素食組合</h1>
+    </div>
+    
+    
+    <div class="content" data-aos="zoom-in-up">
+        <ul>
+            <li data-aos="zoom-in-up">
+                <img src="../img/recipe/rv.png" alt="">
+            </li>
+            <li data-aos="zoom-in-up">
+                <ol>
+                    <h3>蔬菜水果彩虹沙拉</h3>
+                    <h4>材料：</h4>
+                    <p>青葱、紅椒、黃椒、青瓜、紅蘿蔔、</p>
+                    <p>番茄、生菜等多種蔬菜</p>
+                    <p>草莓、藍莓、木瓜等多種水果</p>
+                    <p> 均衡沙拉醬（橄欖油、檸檬汁、蜂蜜、鹽和胡椒）</p>
+                </ol>
+                <ol>
+                    <h4>步驟：</h4>
+                    <p>1.將所有蔬菜和水果洗淨、切片或切塊。</p>
+                    <p>2.準備均衡沙拉醬，將橄欖油、檸檬汁、蜂蜜、鹽和胡椒混合均勻。</p>
+                    <p>3.在大碗中混合蔬菜和水果，加入調和好的沙拉醬，輕輕拌勻即可享用。</p>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="back-top hide" title="回頂部"></div>
 
 
 
@@ -149,6 +208,12 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+    
+
+    </script>
 </body>
 
 </html>

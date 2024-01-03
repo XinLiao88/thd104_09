@@ -8,11 +8,13 @@
     justify-content: center;
     margin: 200px auto 40px;
 }
-
-.title:nth-child(4) {
-    margin: 100px auto 40px;
+.title:nth-child(2){
+    display: none;
 }
 
+.title:nth-child(5) {
+    margin: 100px auto 40px;
+}
 .title img {
     width: 30px;
     padding-right: 16px;
@@ -29,40 +31,40 @@ h1 {
 }
 
 /* ------menu------ */
-.menu {
+.menu{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    width: 700px;
+    width: 620px;
+    display: none;
 }
 
-.menu ul {
+.menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0px;
-    width: 190px;
+    width: 180px;
 }
 
 .menu li{
-    /* width: 200px; */
-    /* margin: 0 2px; */
+    /* padding: 0 5px; */
     box-sizing: border-box;
 }
 
 
-.line {
+.line{
     border-left: 1.5px solid #AAAAAA;
     border-right: 1.5px solid #AAAAAA;
 }
 
-.line2 {
+.line2{
     display: flex;
     justify-content: center;
 }
 
-.menu a {
+.menu a{
     text-decoration: none;
     color: #4B4B4B;
     display: flex;
@@ -73,7 +75,7 @@ h1 {
     opacity: .7;
 }
 
-.menu img {
+.menu img{
     padding-right: 8px;
 }
 
@@ -89,34 +91,41 @@ h1 {
 
 .content ul {
     width: 280px;
-    margin: 20px 8px 30px;
+    margin: 20px 8px 30px; 
 }
 
-.content li {
+.content li{
     width: 280px;
     box-sizing: border-box;
 }
 
-.content div {
+.content div{
     padding-left: 20px;
     padding-bottom: 4px;
 }
 
-.quantity {
+.quantity{
     font-size: 12px;
     font-weight: 300;
     color: #AAAAAA;
+    /* 只有蔬食箱有改 */
+    letter-spacing: .08rem;
 }
 
-.product_table {
-    position: relative;
+.product_table{
+    position:relative;
+    
+}
+/* 只有蔬食箱有改 */
+.product_name{
+    letter-spacing: .08rem;
 }
 
 .bi-heart, .bi-heart-fill {
     font-size: 24px;
     color: #DC7878;
     position: absolute;
-    right: 20px;
+    right:20px;
 }
 
 .price {
@@ -125,21 +134,21 @@ h1 {
     color: #78AA8C;
 }
 
-.original_price {
+.original_price{
     font-size: 16px;
     font-weight: 300;
     color: #AAAAAA;
     text-decoration: line-through;
 }
 
-.count {
+.count{
     padding: 0 8px;
-    align-items: center;
+    align-items: center ;
     font-size: 15px;
     letter-spacing: .07rem;
 }
 
-.button button {
+.button button{
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #78AA8C;
@@ -160,16 +169,16 @@ h1 {
     padding-right: 4px;
 }
 
-.button .add_cart {
+.button .add_cart{
     background-color: #78AA8C;
     width: 118px;
     height: 26px;
-    color: #ffffff;
+    color:#ffffff;
     font-size: 14px;
     margin-left: 20px;
     border-radius: 8px;
 }
-.add_cart span {
+.add_cart span{
     padding: 0;
     font-size: 14px;
 }
@@ -177,6 +186,9 @@ h1 {
 .button .add_cart:hover {
     background-color: #DC7878;
     color: #ffffff;
+}
+.content img{
+    /* border: 1px blue solid; */
 }
 
 
@@ -211,6 +223,7 @@ h1 {
     transform: translateY(150%);
 }
 
+
 /* ------- RWD ------- */
 @media screen  and (max-width: 1500px){
     .back-top{
@@ -232,7 +245,19 @@ h1 {
     .content img {
         width: 100%;
         margin-bottom: 6px;
-    } 
+    }
+    body, .content .price, .content .original_price {
+        /* 只有 */
+        line-height:1.4;
+    }
+    .price_table{
+        /* 只有 */
+        height: 24px;
+    }
+    .product_name{
+        /* 只有 */
+        display: block;
+    }
 
     .button .add_cart{
         width: auto;
@@ -363,9 +388,10 @@ h1 {
         font-size: 18px;
     }
     .menu{
-        width: 500px;
+        width: 480px;
     }
     .menu ul{
+        margin: 10px 0px;
         width: 140px;
     }
     .menu img{
@@ -450,11 +476,10 @@ h1 {
         width: 400px;
     }
     .menu ul{
-        letter-spacing:.1rem;
         width: 120px;
     }
     .line2{
-        content: url(../img/icon/Line_14c.png);
+        /* display: none; */
     }
     .content {
         max-width: 440px;
@@ -489,7 +514,7 @@ h1 {
         width: 350px;
     }
     .menu ul{
-        width: 110px;
+        width: 100px;
     }
     .menu h3{
         font-size: 13px;
@@ -499,7 +524,10 @@ h1 {
         width: 34px;
         padding-right: 4px;
     }
-
+    .line2{
+        /* width: 80px; */
+        content: url(../img/icon/Line_14b.png);
+    }
     .content ul {
         width: 150px;
     }
@@ -511,6 +539,11 @@ h1 {
     body, .content .price, .content .original_price {
         font-size: 14px;
     }
+    .price_table{
+        /* 只有 */
+        height: auto;
+    }
+
     .quantity{
         font-size: 10px;
     }

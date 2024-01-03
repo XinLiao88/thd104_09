@@ -1,6 +1,9 @@
 $(document).ready(function () {
     
-
+    // 子選單 有時會怪怪的
+    $('.select1 li').hover(function () { $(this).find('ol').slideToggle(350) })
+    $('.select2 li').hover(function () { $(this).find('ol').slideToggle(300) })
+    // .css('display', 'block')
 
 
     // 漢堡
@@ -29,7 +32,43 @@ $(document).ready(function () {
         }
     });
 
-    
+    // 商品數量
+    let minus = document.querySelectorAll(".minus"); /* 減少購買的數量 */
+    let plus = document.querySelectorAll(".plus"); /* 增加購買的數量 */
+    let count = document.querySelectorAll(".count"); /* 購買的數量 */
+
+    for (let i = 0; i < plus.length; i++) {
+        plus[i].addEventListener("click", function (e) {
+            // e.preventDefault();
+            if(count[i].innerHTML >= 20){
+            } else{
+                count[i].innerHTML++;
+            }
+        });
+    }
+
+    // 減少數量
+    for (let i = 0; i < plus.length; i++) {
+        minus[i].addEventListener("click", function (e) {
+            // e.preventDefault();
+
+            if (count[i].innerHTML <= 1) {
+            } else {
+                count[i].innerHTML--;
+            }
+        });
+    }
+
+
+    // 加入購物車通知
+    $('.add_cart').click(function (e) {
+        let name = $(this).parents().siblings('.product_table').find('.product_name').text()
+
+        let count = $(this).siblings('.count').text()
+        // console.log(name);
+        alert(`${name} ${count}份 成功加入購物車`)
+    })
+ 
 
     
 

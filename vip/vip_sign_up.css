@@ -11,14 +11,12 @@
     border-radius: 50px;
     border: 3px solid #4B4B4B;
     margin: 200px auto 200px;
-    /* box-sizing: border-box; */
 }
 
 .content {
     width: 400px;
     height: 1000px;
     margin: 60px auto;
-    /* display: block; */
 }
 
 .table h1 {
@@ -34,12 +32,12 @@ input{
     outline: 0;
 }
 
-.input input {
+.input1 input {
     border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 400px;
     height: 60px;
-    margin: 20px 0 10px 0;
+    margin: 20px auto 10px auto;
     padding-left: 30px;
     box-sizing: border-box;
     display: block;
@@ -52,25 +50,17 @@ input{
     background-size: 22px;
 }
 
-/* .input input:nth-child(5) {
-    background-image: url(../img/icon/eye_off.png);
-}
-
-.table input:nth-child(6) {
-    background-image: url(../img/icon/eye_off.png);
-} */
-
 .table ul {
     display: flex;
 }
 
-.table .birthday select {
+.birthday select {
     border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 121px;
     height: 60px;
     margin: 10px 0px 0px 0;
-    padding-left: 20px;
+    padding-left: 26px;
     /* box-sizing: border-box; */
     /* display: block; */
 
@@ -86,10 +76,6 @@ input{
     background-size: 18px;
 }
 
-.table li{
-    margin-right: 18px;
-}
-
 .input2{
     font-size: 0;
     letter-spacing: 0;
@@ -99,14 +85,14 @@ input{
     border: 1px solid #AAAAAA;
     border-radius: 20px;
     width: 400px;
-    margin: 20px 0 10px 0;
+    margin: 20px auto 10px auto;
 }
 .input2 input {
     border: none;
     /* border: 1px solid #AAAAAA; */
     /* border-width: 1px 0 1px 1px; */
     border-radius: 20px 0px 0px 20px;
-    width: 342px;
+    width: 354px;
     height: 60px;
     /* margin: 20px 0 10px 0; */
     padding-left: 30px;
@@ -123,8 +109,8 @@ input{
 }
 
 .input2 i {
-    width: 57px;
-    height: 60px;
+    /* width: 57px; */
+    /* height: 60px; */
     /* border: 1px solid #AAAAAA; */
     text-align: center;
     line-height: 60px;
@@ -132,17 +118,21 @@ input{
     /* box-sizing: border-box; */
 }
 
- .input2 .fa-eye-slash {
+.input2 .fa-eye-slash {
      border-left: 0;
      border-radius: 0 20px 20px 0;
      cursor: pointer;
      color: #AAAAAA;
  }
 
- .input2 .fa-eye-slash:hover {
+.input2 .fa-eye-slash:hover {
      color: #333;
- }
+}
 
+/* 這個推法好像怪怪的 */
+.table li {
+    margin-right: 18px;
+}
 .gender{
     display: flex;
     align-items: center;
@@ -158,7 +148,7 @@ input{
             display: flex;
             align-items: center;
             height: 60px;
-        }
+}
 
 .gender label{
     /* display: block; */
@@ -167,18 +157,19 @@ input{
     align-items: center;
 }
 
+/* 核取方塊 */
 .table li input {
     width: 28px;
     height: 28px;
     display: block;
     margin: 0 auto;
-} /* 核取方塊 */
-
+} 
 
 /* .table li:first-child {
     padding-left: 4px;
 } 核取方塊往右推 */
 
+/* 圓型radio + 同意條款*/
 .table label {
     font-size: 18px;
     font-weight: 300;
@@ -228,7 +219,259 @@ input{
 
 
 
+/* ------- RWD ------- */
 
+@media screen and (max-width: 820px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* --- 開始手機版 --- */
+
+@media screen and (max-width: 790px) {
+    .table{
+        width: 520px;
+        height: 820px;
+        border-radius: 36px;
+    }
+    .content{
+        width: 360px;
+        margin: 50px auto;
+    }
+    .table h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .content input, .birthday select{
+        font-size: 16px;
+    }
+    .input1 input, .input2 input {
+        padding-left: 26px;
+    }
+    .input1 input, .input2 div{
+        border-radius: 14px;
+        width: 360px;
+        height: 50px;
+        background-size: 18px;
+        margin: 18px 0 10px 0;
+    }
+    .input2 input {
+        width: 320px;
+        height: 48px;
+    }
+    .input2 i {
+        line-height: 48px;
+        font-size: 16px;
+    }
+
+    .birthday select{
+        border-radius: 14px;
+        width: 115px;
+        height: 50px;
+        margin: 8px 0px 0px 0;
+        background-position: 85px 18px;
+        background-size: 14px;
+    }
+
+    /* 這個推法好像怪怪的 */
+    .table li{
+        margin-right: 8px;
+    }
+
+    .gender li{
+        height: 50px;
+    }
+
+    /* 登入按鈕 */
+    .content input[type="submit"]{
+        font-size: 15px;
+        width: 240px;
+        height: 46px;
+        border-radius: 12px;
+        margin: 40px auto 16px;
+    }
+    /* 核取方塊 */
+    .table li input{
+        width: 20px;
+    }
+    /* 圓型radio + 同意條款*/
+    .table label {
+        font-size: 15px;
+    }
+    /* 已有帳號嗎? */
+    .table ul:last-child {
+        font-size: 15px;
+    } 
+    .table ul a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .table{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .table{
+        width: 400px;
+        height: 650px;
+        border: 2px solid;
+        border-radius: 30px;
+    }
+    .content{
+        width: 300px;
+        margin: 34px auto;
+    }
+    .table h1{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .content input, .birthday select{
+        font-size: 14px;
+    }
+    .input1 input, .input2 input  {
+        padding-left: 18px;
+    }
+    .input1 input, .input2 div{
+        border-radius: 12px;
+        width: 300px;
+        height: 46px;
+        background-size: 16px;
+        margin: 12px 0 6px 0;
+    }
+    .input2 input {
+        width: 268px;
+        height: 44px;
+    }
+    .input2 i {
+        line-height: 46px;
+        font-size: 14px;
+    }
+
+    .birthday select{
+        border-radius: 12px;
+        width: 97px;
+        height: 46px;
+        margin: 6px 0px 0px 0;
+        padding-left: 16px;
+        background-position: 72px 18px;
+        background-size: 10px;
+    }
+
+    /* 這個推法好像怪怪的 */
+    .table li{
+        margin-right: 4px;
+    }
+    .gender li{
+        height: 40px;
+    }
+    /* 登入按鈕 */
+    .content input[type="submit"]{
+        font-size: 13px;
+        width: 200px;
+        height: 38px;
+        border-radius: 10px;
+        margin: 30px auto 8px;
+    }
+    /* 核取方塊 */
+    .table li input{
+        width: 16px;
+    }
+     /* 圓型radio + 同意條款*/
+    .table label {
+        font-size: 13px;
+    }
+    /* 已有帳號嗎? */
+    .table ul:last-child {
+        font-size: 13px;
+        letter-spacing: .06rem;
+    }    
+    .table ul a{
+        font-size: 12px;
+    }   
+}
+
+@media screen and (max-width: 450px){
+    .table{
+        width: 340px;
+        height: 560px;
+        border-radius: 26px;
+    }
+    .content{
+        width: 260px;
+        margin: 30px auto;
+    }
+    .table h1{
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+    .content input, .birthday select{
+        font-size: 13px;
+    }
+    .input1 input, .input2 input  {
+        padding-left: 14px;
+        /* background-position: 15px 14px; */
+    }
+    .input1 input, .input2 div{
+        /* border-radius: 12px; */
+        width: 260px;
+        height: 44px;
+        background-size: 14px;
+        margin: 8px 0 4px 0;
+    }
+    .input2 input {
+        width: 232px;
+        height: 40px;
+    }
+    .input2 i {
+        /* line-height: 42px; */
+        font-size: 12px;
+    }
+    .birthday select{
+        /* border-radius: 12px; */
+        width: 85px;
+        height: 44px;
+        margin: 4px 0px 0px 0;
+        padding-left: 12px;
+        background-position: 66px 16px;
+        background-size: 8px;
+    }
+
+    /* 這個推法好像怪怪的 */
+    .table li{
+        margin-right: 2px;
+    }
+    .gender li{
+        height: 26px;
+    }
+    /* 登入按鈕 */
+    .content input[type="submit"]{
+        font-size: 12px;
+        width: 180px;
+        height: 34px;
+        margin: 20px auto 6px;
+    }
+    /* 核取方塊 */
+    .table li input{
+        /* width: 16px; */
+    }
+    /* 圓型radio + 同意條款*/
+    .table label {
+        font-size: 12px;
+        letter-spacing: .06rem;
+    }
+     /* 已有帳號嗎? */
+    .table ul:last-child {
+        font-size: 11px;
+        /* letter-spacing: .06rem; */
+    }    
+    .table ul a{
+        font-size: 10px;
+    }   
+}
 
 
 

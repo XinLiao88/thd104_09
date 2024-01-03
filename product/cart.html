@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./forgotpw.css" rel="stylesheet" type="text/css" />
+    <link href="./cart.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="icon" href="../img/logo_ico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="../js/jquery-3.7.1.js"></script>
     <script src="../js/js.js"></script>
-    <title>圓食｜忘記密碼</title>
+    <title>圓食｜冷藏蔬果</title>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
                 <a href="../product/cart.html">
                     <img src="../img/icon/cart.svg" alt="">
                 </a>
-
+    
             </li>
         </ul>
         <ul class="select1">
@@ -88,27 +89,28 @@
                 </li>
             </ul>
     </header>
-    <!-- ------content------ -->
+    
 
-    <div class="table">
+        <!-- ------content------ -->
 
-        <div class="content">
-
-            <h1>忘記密碼?</h1>
-            <div class="input">
-                <input type="text" placeholder="請輸入E-mail">
-            </div>
-
-            <p>我們將透過電子郵件給您發送連結，以重設您的密碼</p>
-            <!-- <a href=""><img src="../img/button/Property 1=login, Property 2=on.png" alt=""></a> -->
-            <form action="setpw.html">
-                <input type="submit" value="送出" />
-            </form>
-           
-            <!-- <button>登入</button> -->
-
-        </div>
+    <div class="title">
+        <img src="../img/icon/cabbage.svg" alt="">
+        <h1>購物車</h1>
     </div>
+
+    <div class="content">
+        <img src="../img/cartpage.jpg" alt="">
+        
+
+    </div>
+   
+
+   
+            
+
+
+
+    <div class="back-top hide" title="回頂部"></div>
 
 
 
@@ -149,6 +151,107 @@
         </div>
     </footer>
 
+    <script>
+        window.onload = function () {
+   
+
+            // $('.plus').click(function (e) {
+                // let a = $('.count').val()
+                // console.log('a');
+                // let c = parseInt($('.count'));
+                // let a = parseInt(count.innerHTML);
+                
+                // let count1= parseInt($(this).siblings('.count'));
+                // console.log(count1*1+1);
+              
+                // $(this).siblings('.count');
+                // count1+1;
+                // e.preventDefault();
+                
+                // let count2=Number(count1);
+                // console.log(typeof (count2));
+                // count2.innerHTML++;
+                // console.log(parseInt(count2++));
+                // count1.val()++;
+                // console.log(parseInt(count1)+parseInt(1));
+                // count1+1;
+                // $(this).siblings('.count').val(+1);
+                    
+                // let c = parseInt($(this).siblings('.count'));
+                // count1++;
+                // $(this).siblings('.count').css('color', 'red');
+                // $('count').css('color', 'red');
+                // console.log(count);
+                // $('.count').innerHTML++;
+                // $('.count').append(+1); // 會一次把全部都+111但也只抓到第一個plus
+            // })
+            
+
+
+
+            // var like = document.getElementById("like");
+            // like.addEventListener("click", function () {
+            // this.classList.remove("bi-heart");
+            // this.classList.add("bi-heart-fill");
+            // });
+
+            // var like2 = document.getElementById("like");
+            // like2.addEventListener("click", function () {
+            //     this.classList.remove("bi-heart-fill");
+            //     this.classList.add("bi-heart");
+            // });
+
+         
+            // $('.select1 ol').mouseover(function(){ 
+            //     slidedown(600, 'easeOutBounce') })
+
+            // $('.select2 a').hover(function(a) { $(this).siblings('ol').slideDown(400)})
+            // $('.select2 a').mouseleave(function (a) { $(this).siblings('ol').slideUp(400) })
+            // $('.select2 ol').mouseleave(function (a) { $(this).slideUp(400)})
+            // $('select1 ol').animate(slideToggle())
+
+
+
+            // var like = document.getElementById("like");
+            // like.addEventListener("click", function () {
+            //     if(like.class = "bi-heart"){
+            //         // console.log(this);
+            //         this.classList.remove("bi-heart");
+            //         this.classList.add("bi-heart-fill");
+            //     }else{
+            //         like.class = "bi-heart-fill";
+            //         // console.log(this);
+            //         this.classList.remove("bi-heart-fill");
+            //         this.classList.add("bi-heart");
+            //     }
+            // });                
+        }
+
+        // $(document).ready(function () {
+        //         // 捲軸偵測距離頂部超過 ＊ 才顯示按鈕
+        //         $(window).scroll(function () {
+        //             if ($(window).scrollTop() > 900) {
+        //                 if ($(".back-top").hasClass("hide")) {
+        //                     $(".back-top").toggleClass("hide");
+        //                 }
+        //             } else {
+        //                 $(".back-top").addClass("hide");
+        //             }
+        //         });
+
+        //         // 點擊按鈕回頂部
+        //         $(".back-top").on("click", function (event) {
+        //             $("html, body").animate(
+        //                 {
+        //                     scrollTop: 0
+        //                 },
+        //                 500 // 回頂部時間為 500 毫秒
+        //             );
+        //         });
+        //     });
+
+
+    </script>
 </body>
 
 </html>
